@@ -69,7 +69,7 @@ const structuredData = {
       alternateName: 'Rolling Barrier System',
       inLanguage: 'es',
       description:
-        'Información técnica y comercial sobre la Barrera Metálica con Rodillos para proyectos de seguridad vial en Colombia y Latinoamérica.',
+  'Información técnica y comercial sobre la Barrera Metálica con Rodillos y su aplicación en proyectos de infraestructura vial.',
       about: { '@id': `${siteUrl}/#product` },
       publisher: { '@id': `${siteUrl}/#global-fund-group` },
     },
@@ -77,7 +77,7 @@ const structuredData = {
       '@type': 'WebPage',
       '@id': `${siteUrl}/#webpage`,
       url: siteUrl,
-      name: 'Barrera Metálica con Rodillos en Colombia | Sistema de Contención Vehicular',
+      name: 'Barrera Metálica con Rodillos | Sistema de Contención Vehicular',
       isPartOf: { '@id': `${siteUrl}/#website` },
       about: { '@id': `${siteUrl}/#product` },
       mainEntity: [
