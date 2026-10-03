@@ -10,7 +10,6 @@ export const metadata: Metadata = {
     template: '%s | Barrera Metálica con Rodillos',
   },
   description:
-    description:
   'Información técnica de la Barrera Metálica con Rodillos: funcionamiento, desempeño, aplicaciones, certificaciones y atención técnica y comercial para proyectos de infraestructura vial.',
   alternates: {
     canonical: '/',
