@@ -71,7 +71,7 @@ const structuredData = {
       description:
         'Información técnica y comercial sobre la Barrera Metálica con Rodillos para proyectos de seguridad vial en Colombia y Latinoamérica.',
       about: { '@id': `${siteUrl}/#product` },
-      publisher: { '@id': `${siteUrl}/#vanessa-diaz-torres` },
+      publisher: { '@id': `${siteUrl}/#global-fund-group` },
     },
     {
       '@type': 'WebPage',
@@ -108,12 +108,32 @@ const structuredData = {
       },
     },
     {
+  '@type': 'Organization',
+  '@id': `${siteUrl}/#global-fund-group`,
+  name: 'Global Fund Group S.A.S.',
+  url: siteUrl,
+  description:
+    'Empresa que comercializa y distribuye de forma exclusiva la Barrera Metálica con Rodillos en Colombia.',
+  areaServed: {
+    '@type': 'Country',
+    name: 'Colombia',
+  },
+  founder: {
+    '@id': `${siteUrl}/#vanessa-diaz-torres`,
+  },
+  knowsAbout: [
+    'Barrera Metálica con Rodillos',
+    'Sistemas de contención vehicular',
+    'Seguridad vial',
+  ],
+},
+    {
       '@type': 'Service',
       '@id': `${siteUrl}/#service`,
       name: 'Atención técnica y comercial de Barrera Metálica con Rodillos',
       serviceType: 'Consultas técnicas y comerciales para proyectos de sistemas de contención vehicular',
       url: `${siteUrl}/#contacto`,
-      provider: { '@id': `${siteUrl}/#vanessa-diaz-torres` },
+      provider: { '@id': `${siteUrl}/#global-fund-group` },
       areaServed: [
         { '@type': 'Country', name: 'Colombia' },
         { '@type': 'Place', name: 'Latinoamérica' },
@@ -123,7 +143,8 @@ const structuredData = {
       '@type': 'Person',
       '@id': `${siteUrl}/#vanessa-diaz-torres`,
       name: 'Vanessa Díaz Torres',
-      jobTitle: 'Consultas técnicas y comerciales',
+     jobTitle: 'Fundadora y Gerente',
+      worksFor: { '@id': `${siteUrl}/#global-fund-group` },
       url: `${siteUrl}/#contacto`,
       email: 'mailto:contacto@barreraconrodillos.com',
       telephone: '+34 675 123 282',
