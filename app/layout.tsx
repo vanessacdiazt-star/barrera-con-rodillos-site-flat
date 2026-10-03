@@ -6,11 +6,12 @@ const siteUrl = 'https://barreraconrodillos.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Barrera Metálica con Rodillos en Colombia | Sistema de Contención Vehicular',
+    default: 'Barrera Metálica con Rodillos | Sistema de Contención Vehicular',
     template: '%s | Barrera Metálica con Rodillos',
   },
   description:
-    'Información técnica de la Barrera Metálica con Rodillos para proyectos de seguridad vial en Colombia y Latinoamérica: funcionamiento, desempeño, aplicaciones, certificaciones y contacto técnico-comercial.',
+    description:
+  'Información técnica de la Barrera Metálica con Rodillos: funcionamiento, desempeño, aplicaciones, certificaciones y atención técnica y comercial para proyectos de infraestructura vial.',
   alternates: {
     canonical: '/',
   },
@@ -34,9 +35,9 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     url: siteUrl,
     siteName: 'Barrera Metálica con Rodillos',
-    title: 'Barrera Metálica con Rodillos en Colombia | Sistema de Contención Vehicular',
+    title: 'Barrera Metálica con Rodillos | Sistema de Contención Vehicular',
     description:
-      'Tecnología de contención vehicular con rodillos: funcionamiento, desempeño, aplicaciones, certificaciones y atención técnica y comercial para proyectos en Colombia y Latinoamérica.',
+  'Información técnica de la Barrera Metálica con Rodillos: funcionamiento, desempeño, aplicaciones, certificaciones y atención técnica y comercial para proyectos de infraestructura vial.',
     images: [
       {
         url: '/assets/hero-road.jpg',
@@ -48,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Barrera Metálica con Rodillos en Colombia',
-    description:
-      'Sistema de contención vehicular con rodillos para proyectos de seguridad vial en Colombia y Latinoamérica.',
+   title: 'Barrera Metálica con Rodillos',
+   description:
+  'Información técnica de la Barrera Metálica con Rodillos: funcionamiento, desempeño, aplicaciones, certificaciones y atención técnica y comercial para proyectos de infraestructura vial.',
     images: ['/assets/hero-road.jpg'],
   },
   icons: {
