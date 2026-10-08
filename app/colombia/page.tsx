@@ -3,7 +3,7 @@ export default function ColombiaPage() {
     <main
       style={{
         background: '#F5F2EA',
-        color: '#192C3D',
+        color: '#A97712',
       }}
     >
       <section
@@ -148,7 +148,8 @@ export default function ColombiaPage() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   minHeight: '52px',
-                  color: '#192C3D',
+                  background: '#192C3D',
+                  color: '#FFFFFF',
                   textDecoration: 'none',
                   fontSize: '15px',
                   fontWeight: 600,
