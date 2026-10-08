@@ -4,20 +4,40 @@ import { useEffect, useState } from 'react';
 
 const nav = [
   ['Tecnología', '#tecnologia'],
-  ['Desempeño', '#desempeno'],
   ['Certificaciones', '#certificaciones'],
-  ['Evaluación', '#aplicaciones'],
   ['Criterios técnicos', '#criterios-tecnicos'],
+  ['Colombia', '#colombia'],
   ['Casos de éxito', '#casos-exito'],
   ['Galería', '#galeria'],
   ['Contacto', '#contacto'],
 ];
 
 const countries = [
-  'Corea', 'Indonesia', 'Tailandia', 'Malasia', 'Mongolia', 'Ghana', 'Rumania', 'Filipinas',
-  'Taiwán', 'Kazajistán', 'Pakistán', 'Irán', 'Turquía', 'Estados Unidos', 'Chile', 'México',
-  'Puerto Rico', 'Curazao', 'Australia', 'Trinidad y Tobago', 'Arabia Saudita', 'China', 'India',
-  'Sudáfrica', 'Singapur'
+  'Corea',
+  'Indonesia',
+  'Tailandia',
+  'Malasia',
+  'Mongolia',
+  'Ghana',
+  'Rumania',
+  'Filipinas',
+  'Taiwán',
+  'Kazajistán',
+  'Pakistán',
+  'Irán',
+  'Turquía',
+  'Estados Unidos',
+  'Chile',
+  'México',
+  'Puerto Rico',
+  'Curazao',
+  'Australia',
+  'Trinidad y Tobago',
+  'Arabia Saudita',
+  'China',
+  'India',
+  'Sudáfrica',
+  'Singapur',
 ];
 
 function BrandMark({ small = false }: { small?: boolean }) {
@@ -41,37 +61,167 @@ function Icon({ name }: { name: string }) {
     stroke: 'currentColor',
     strokeWidth: 1.8,
     strokeLinecap: 'round' as const,
-    strokeLinejoin: 'round' as const
+    strokeLinejoin: 'round' as const,
   };
 
-  if (name === 'shield') return <svg {...common}><path d="M12 3 19 6v5c0 5-3.3 8.2-7 10-3.7-1.8-7-5-7-10V6l7-3Z" /></svg>;
-  if (name === 'car') return <svg {...common}><path d="m5 13 2-5h10l2 5" /><path d="M4 13h16v5H4z" /><circle cx="7" cy="18" r="1" /><circle cx="17" cy="18" r="1" /></svg>;
-  if (name === 'width') return <svg {...common}><path d="M4 12h16M7 9l-3 3 3 3M17 9l3 3-3 3" /></svg>;
-  if (name === 'turn') return <svg {...common}><path d="M5 18v-4a6 6 0 0 1 6-6h6" /><path d="m14 5 3 3-3 3" /></svg>;
-  if (name === 'eye') return <svg {...common}><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z" /><circle cx="12" cy="12" r="2.5" /></svg>;
-  if (name === 'modules') return <svg {...common}><path d="m7 4 4 2.3-4 2.3L3 6.3 7 4Zm10 0 4 2.3-4 2.3-4-2.3L17 4ZM7 13l4 2.3-4 2.3-4-2.3L7 13Zm10 0 4 2.3-4 2.3-4-2.3 4-2.3Z" /></svg>;
-  if (name === 'pin') return <svg {...common}><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg>;
-  if (name === 'phone') return <svg {...common}><path d="M6 3h3l1 4-2 1c1.2 3 3.2 5 6 6l1-2 4 1v3c0 1.1-.9 2-2 2C10.4 18 6 13.6 6 8V5c0-1.1.9-2 2-2Z" /></svg>;
-  if (name === 'mail') return <svg {...common}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>;
-  if (name === 'globe') return <svg {...common}><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></svg>;
-  if (name === 'user') return <svg {...common}><circle cx="12" cy="8" r="3.5" /><path d="M5 21v-2a7 7 0 0 1 14 0v2" /></svg>;
-  if (name === 'road') return <svg {...common}><path d="M9 21 11 3M15 21 13 3M12 7v3M12 14v3" /></svg>;
-  if (name === 'tunnel') return <svg {...common}><path d="M5 20V9a7 7 0 0 1 14 0v11M9 20V9a3 3 0 0 1 6 0v11" /></svg>;
-  if (name === 'bridge') return <svg {...common}><path d="M3 8h18M5 8v11M19 8v11M8 8v5M16 8v5M3 13h18" /></svg>;
-  if (name === 'mountain') return <svg {...common}><path d="m3 19 6-10 4 6 3-5 5 9H3Z" /></svg>;
-  if (name === 'curve') return <svg {...common}><path d="M7 20c0-4 5-3 5-7s-5-3-5-7M17 20c0-4-5-3-5-7s5-3 5-7" /></svg>;
+  if (name === 'shield')
+    return (
+      <svg {...common}>
+        <path d="M12 3 19 6v5c0 5-3.3 8.2-7 10-3.7-1.8-7-5-7-10V6l7-3Z" />
+      </svg>
+    );
 
-  return <svg {...common}><circle cx="12" cy="12" r="8" /></svg>;
+  if (name === 'car')
+    return (
+      <svg {...common}>
+        <path d="m5 13 2-5h10l2 5" />
+        <path d="M4 13h16v5H4z" />
+        <circle cx="7" cy="18" r="1" />
+        <circle cx="17" cy="18" r="1" />
+      </svg>
+    );
+
+  if (name === 'width')
+    return (
+      <svg {...common}>
+        <path d="M4 12h16M7 9l-3 3 3 3M17 9l3 3-3 3" />
+      </svg>
+    );
+
+  if (name === 'turn')
+    return (
+      <svg {...common}>
+        <path d="M5 18v-4a6 6 0 0 1 6-6h6" />
+        <path d="m14 5 3 3-3 3" />
+      </svg>
+    );
+
+  if (name === 'eye')
+    return (
+      <svg {...common}>
+        <path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z" />
+        <circle cx="12" cy="12" r="2.5" />
+      </svg>
+    );
+
+  if (name === 'modules')
+    return (
+      <svg {...common}>
+        <path d="m7 4 4 2.3-4 2.3L3 6.3 7 4Zm10 0 4 2.3-4 2.3-4-2.3L17 4ZM7 13l4 2.3-4 2.3-4-2.3L7 13Zm10 0 4 2.3-4 2.3-4-2.3 4-2.3Z" />
+      </svg>
+    );
+
+  if (name === 'pin')
+    return (
+      <svg {...common}>
+        <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" />
+        <circle cx="12" cy="10" r="2" />
+      </svg>
+    );
+
+  if (name === 'phone')
+    return (
+      <svg {...common}>
+        <path d="M6 3h3l1 4-2 1c1.2 3 3.2 5 6 6l1-2 4 1v3c0 1.1-.9 2-2 2C10.4 18 6 13.6 6 8V5c0-1.1.9-2 2-2Z" />
+      </svg>
+    );
+
+  if (name === 'mail')
+    return (
+      <svg {...common}>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m4 7 8 6 8-6" />
+      </svg>
+    );
+
+  if (name === 'globe')
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+      </svg>
+    );
+
+  if (name === 'user')
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="8" r="3.5" />
+        <path d="M5 21v-2a7 7 0 0 1 14 0v2" />
+      </svg>
+    );
+
+  if (name === 'road')
+    return (
+      <svg {...common}>
+        <path d="M9 21 11 3M15 21 13 3M12 7v3M12 14v3" />
+      </svg>
+    );
+
+  if (name === 'tunnel')
+    return (
+      <svg {...common}>
+        <path d="M5 20V9a7 7 0 0 1 14 0v11M9 20V9a3 3 0 0 1 6 0v11" />
+      </svg>
+    );
+
+  if (name === 'bridge')
+    return (
+      <svg {...common}>
+        <path d="M3 8h18M5 8v11M19 8v11M8 8v5M16 8v5M3 13h18" />
+      </svg>
+    );
+
+  if (name === 'mountain')
+    return (
+      <svg {...common}>
+        <path d="m3 19 6-10 4 6 3-5 5 9H3Z" />
+      </svg>
+    );
+
+  if (name === 'curve')
+    return (
+      <svg {...common}>
+        <path d="M7 20c0-4 5-3 5-7s-5-3-5-7M17 20c0-4-5-3-5-7s5-3 5-7" />
+      </svg>
+    );
+
+  return (
+    <svg {...common}>
+      <circle cx="12" cy="12" r="8" />
+    </svg>
+  );
 }
 
 function CertificationMark({ type }: { type: string }) {
-  if (type === 'MASH') return <span className="certMarkSvg"><Icon name="shield" /></span>;
+  if (type === 'MASH')
+    return (
+      <span className="certMarkSvg">
+        <Icon name="shield" />
+      </span>
+    );
+
   if (type === 'EN') return <span className="enMark">EN</span>;
   if (type === 'CE') return <span className="ceMark">CE</span>;
-  if (type === 'FHWA') return <span className="fhwaMark"><i /><i /><i /></span>;
-  if (type === 'IRF') return <span className="certMarkSvg"><Icon name="globe" /></span>;
+
+  if (type === 'FHWA')
+    return (
+      <span className="fhwaMark">
+        <i />
+        <i />
+        <i />
+      </span>
+    );
+
+  if (type === 'IRF')
+    return (
+      <span className="certMarkSvg">
+        <Icon name="globe" />
+      </span>
+    );
+
   if (type === 'ASTM') return <span className="astmMark">ASTM</span>;
   if (type === 'KICT') return <span className="kictMark">KICT</span>;
+
   return <span className="certMarkText">{type}</span>;
 }
 
@@ -117,90 +267,87 @@ function Hero({ onOpenVideo }: { onOpenVideo: () => void }) {
     ['EN 1317', 'H1 / H2', 'EN'],
     ['CE', '', 'CE'],
     ['FHWA', '', 'FHWA'],
-    ['IRF', '', 'IRF']
+    ['IRF', '', 'IRF'],
   ];
 
   return (
-    <>
-      <section id="inicio" className="hero sectionAnchor">
-        <img
-          className="heroImage"
-          src="/assets/hero-road.jpg"
-          alt="Barrera Metálica con Rodillos instalada en una curva vial"
-        />
+    <section id="inicio" className="hero sectionAnchor">
+      <img
+        className="heroImage"
+        src="/assets/hero-road.jpg"
+        alt="Barrera Metálica con Rodillos instalada en una curva vial"
+      />
 
-        <div className="heroOverlay" />
+      <div className="heroOverlay" />
 
-        <div className="heroInner">
-          <a
-            className="inviasPill"
-            href="/colombia"
-          >
-            Marco técnico en Colombia <b>|</b> INVÍAS · Artículo 730-22 <span>→</span>
+      <div className="heroInner">
+        <a
+          className="inviasPill"
+          href="/colombia#marco-tecnico"
+        >
+          Marco técnico en Colombia <b>|</b> INVÍAS · Artículo 730-22{' '}
+          <span>→</span>
+        </a>
+
+        <h1>
+          Barrera Metálica
+          <br />
+          con Rodillos
+        </h1>
+
+        <div className="heroSubtitle">
+          Rolling Barrier System
+        </div>
+
+        <p>
+          Una solución orientada a proteger vidas
+          <br />
+          y reducir la severidad de los impactos.
+        </p>
+
+        <div className="heroButtons">
+          <a className="btn btnYellow" href="#contacto">
+            Solicitar cotización técnica <span>→</span>
           </a>
 
-          <h1>
-            Barrera Metálica
-            <br />
-            con Rodillos
-          </h1>
-
-          <div className="heroSubtitle">
-            Rolling Barrier System
-          </div>
-
-          <p>
-            Una solución orientada a proteger vidas
-            <br />
-            y reducir la severidad de los impactos.
-          </p>
-
-          <div className="heroButtons">
-            <a className="btn btnYellow" href="#contacto">
-              Solicitar cotización técnica <span>→</span>
-            </a>
-
-            <button
-              className="btn btnGhost videoTrigger"
-              type="button"
-              onClick={onOpenVideo}
-            >
-              <span className="play">▶</span> Ver cómo funciona
-            </button>
-          </div>
-
-          <div
-            id="certificaciones"
-            className="heroCerts"
-            aria-label="Certificaciones y respaldo"
+          <button
+            className="btn btnGhost videoTrigger"
+            type="button"
+            onClick={onOpenVideo}
           >
-            {heroCerts.map(([name, level, mark]) => (
-              <a
-                className="heroCert"
-                key={name}
-                href="#certificaciones-contenido"
-              >
-                <div className="heroCertSymbol">
-                  <CertificationMark type={mark} />
-                </div>
-
-                <strong>{name}</strong>
-
-                {level && <small>{level}</small>}
-              </a>
-            ))}
-          </div>
+            <span className="play">▶</span> Ver cómo funciona
+          </button>
         </div>
-      </section>
 
-      <Performance />
-    </>
+        <div
+          id="certificaciones"
+          className="heroCerts"
+          aria-label="Certificaciones y respaldo"
+        >
+          {heroCerts.map(([name, level, mark]) => (
+            <a
+              className="heroCert"
+              key={name}
+              href="#certificaciones-contenido"
+            >
+              <div className="heroCertSymbol">
+                <CertificationMark type={mark} />
+              </div>
+
+              <strong>{name}</strong>
+
+              {level && <small>{level}</small>}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
 function VideoModal({
   open,
-  onClose
+  onClose,
 }: {
   open: boolean;
   onClose: () => void;
@@ -256,6 +403,7 @@ function VideoModal({
               src="/video/funcionamiento-barrera.mp4"
               type="video/mp4"
             />
+
             Su navegador no admite la reproducción de video HTML5.
           </video>
         </div>
@@ -280,154 +428,22 @@ function VideoModal({
   );
 }
 
-function Performance() {
-  const jumpToNote = (event: any, href: string) => {
-    event.preventDefault();
-
-    const id = href.replace('#', '');
-
-    window.history.replaceState(null, '', href);
-
-    window.dispatchEvent(
-      new CustomEvent('technical-note-focus', {
-        detail: id
-      })
-    );
-
-    window.setTimeout(() => {
-      const target = document.getElementById(id);
-
-      if (!target) return;
-
-      const header = document.querySelector('.siteHeader') as HTMLElement | null;
-      const headerHeight = header?.offsetHeight ?? 0;
-
-      const visualOffset =
-        window.innerWidth <= 780
-          ? Math.max(headerHeight + 34, window.innerHeight * 0.20)
-          : headerHeight + 42;
-
-      const top =
-        window.scrollY +
-        target.getBoundingClientRect().top -
-        visualOffset;
-
-      window.scrollTo({
-        top: Math.max(0, top),
-        behavior: 'smooth'
-      });
-    }, 160);
-  };
-
-  const metrics = [
-    [
-      'H1 / H2 / H3',
-      'Nivel de contención (NC)',
-      'Capacidad para contener vehículos hasta 13 toneladas',
-      '#note-nc'
-    ],
-    [
-      'ASI ≤ 1.3',
-      'ASI | Índice de Severidad de la Aceleración',
-      'Desempeño de severidad registrado',
-      '#note-asi'
-    ],
-    [
-      '0,27 – 0,38 m',
-      'Deflexión dinámica (D)',
-      'Desplazamiento lateral dinámico indicado',
-      '#note-deflexion'
-    ],
-    [
-      '0,54 – 0,68 m',
-      'Anchura de trabajo (W)',
-      'Espacio lateral de trabajo indicado',
-      '#note-anchura'
-    ],
-    [
-      '0,77 – 0,81 m',
-      'Intrusión del vehículo (VI)',
-      'Intrusión lateral indicada',
-      '#note-intrusion'
-    ],
-    [
-      'Alta',
-      'Redireccionamiento',
-      'Capacidad de reconducción documentada',
-      '#note-redireccionamiento'
-    ],
-  ];
-
-  return (
-    <section
-      id="desempeno"
-      className="section light performance sectionAnchor"
-    >
-      <div className="eyebrow">
-        <span />
-        DESEMPEÑO TÉCNICO
-      </div>
-
-      <div className="metricsGrid">
-        {metrics.map(([value, label, note, href]) => (
-          <a
-            className="metricCard"
-            key={value}
-            href={href}
-            onClick={(event) => jumpToNote(event, href)}
-            aria-label={`${label}: ${value}. Ver significado técnico`}
-          >
-            <BrandMark small />
-
-            <strong>{value}</strong>
-
-            <h3>{label}</h3>
-
-            <p>{note}</p>
-
-            <span className="metricMeaning">
-              ¿Qué significa? ↓
-            </span>
-          </a>
-        ))}
-      </div>
-
-      <div
-        className="testConditions"
-        aria-label="Condiciones de ensayo documentadas"
-      >
-        <h3>Condiciones de ensayo documentadas</h3>
-
-        <div>
-          <b>105.8 km/h</b>
-          <span>Velocidad de prueba indicada</span>
-        </div>
-
-        <div>
-          <b>15° – 25°</b>
-          <span>Ángulo de impacto documentado</span>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function Technology() {
   const steps = [
     [
       '01',
       'Transformación de energía',
-      'El sistema transforma la energía cinética del impacto en energía rotacional mediante el movimiento de los rodillos, reduciendo significativamente la fuerza transmitida.'
+      'El sistema transforma la energía cinética del impacto en energía rotacional mediante el movimiento de los rodillos, reduciendo significativamente la fuerza transmitida.',
     ],
     [
       '02',
       'Absorción y disipación',
-      'Los rodillos fabricados en EVA absorben y disipan la energía del impacto de forma progresiva, evitando una transferencia brusca a los ocupantes del vehículo.'
+      'Los rodillos fabricados en EVA absorben y disipan la energía del impacto de forma progresiva, evitando una transferencia brusca a los ocupantes del vehículo.',
     ],
     [
       '03',
       'Redirección controlada',
-      'Tras el impacto, el sistema redirige suavemente el vehículo de vuelta a la vía, evitando rebotes peligrosos o salidas de la calzada.'
+      'Tras el impacto, el sistema redirige suavemente el vehículo de vuelta a la vía, evitando rebotes peligrosos o salidas de la calzada.',
     ],
   ];
 
@@ -452,8 +468,8 @@ function Technology() {
           <p>
             La barrera metálica con rodillos transforma la energía de
             impacto, la absorbe y la disipa a través del movimiento
-            rotacional de sus rodillos, ayudando a redirigir el
-            vehículo de forma controlada.
+            rotacional de sus rodillos, ayudando a redirigir el vehículo
+            de forma controlada.
           </p>
         </div>
 
@@ -466,7 +482,6 @@ function Technology() {
               src="/assets/function-seq-1.png"
               alt="01. Vehículo impactando lateralmente contra la Barrera Metálica con Rodillos"
             />
-
             <figcaption>
               <b>01</b>
               <span>Impacto</span>
@@ -478,7 +493,6 @@ function Technology() {
               src="/assets/function-seq-2.png"
               alt="02. Rodillos girando durante la absorción y disipación de energía"
             />
-
             <figcaption>
               <b>02</b>
               <span>Absorción</span>
@@ -490,7 +504,6 @@ function Technology() {
               src="/assets/function-seq-3.png"
               alt="03. Vehículo redirigido manteniendo el mismo sentido de circulación"
             />
-
             <figcaption>
               <b>03</b>
               <span>Redirección</span>
@@ -502,9 +515,7 @@ function Technology() {
       <div className="stepsGrid">
         {steps.map(([n, title, text], index) => (
           <article className="stepCard" key={n}>
-            <div className="stepNumber">
-              {n}
-            </div>
+            <div className="stepNumber">{n}</div>
 
             <div className="stepText">
               <h3>{title}</h3>
@@ -531,21 +542,21 @@ function Advantages() {
       'Diseño modular',
       'Componentes reemplazables que facilitan el mantenimiento y reducen costos operativos.',
       '/assets/advantages/modular.jpg',
-      'Vista en despiece de los componentes de la Barrera Metálica con Rodillos'
+      'Vista en despiece de los componentes de la Barrera Metálica con Rodillos',
     ],
     [
       'curve',
       'Versátil',
       'Puede utilizarse en curvas peligrosas, rampas de entrada y salida con radios de curvatura pronunciados, tableros de puentes y entradas de túneles, así como para proteger instalaciones situadas junto a la carretera que presenten riesgos potenciales.',
       '/assets/advantages/versatil.jpg',
-      'Barrera Metálica con Rodillos instalada en una curva con condiciones invernales'
+      'Barrera Metálica con Rodillos instalada en una curva con condiciones invernales',
     ],
     [
       'eye',
       'Alta visibilidad',
       'Los rodillos EVA cuentan con bandas de lámina reflectante de alta visibilidad 3M que proporcionan una advertencia reflectante segura para los conductores durante la noche.',
       '/assets/advantages/visibilidad-nocturna.jpg',
-      'Bandas reflectantes de alta visibilidad en la Barrera Metálica con Rodillos durante la noche'
+      'Bandas reflectantes de alta visibilidad en la Barrera Metálica con Rodillos durante la noche',
     ],
   ];
 
@@ -575,8 +586,8 @@ function Advantages() {
 
         <p>
           La Barrera Metálica con Rodillos combina diseño modular,
-          versatilidad de aplicación y alta visibilidad para responder
-          a diferentes condiciones de infraestructura vial.
+          versatilidad de aplicación y alta visibilidad para responder a
+          diferentes condiciones de infraestructura vial.
         </p>
       </div>
 
@@ -617,31 +628,31 @@ function Certifications() {
       'EN 1317 H1/H2/H3',
       'Documentación europea de ensayos y desempeño para sistemas de contención vehicular.',
       '#certificaciones-contenido',
-      'CE'
+      'CE',
     ],
     [
       'MASH TL-3 – FHWA',
       'Documentación de ensayos bajo MASH y elegibilidad emitida dentro del marco vial estadounidense.',
       '#certificaciones-contenido',
-      'MASH'
+      'MASH',
     ],
     [
       'Certificado CE',
       'Documentación de conformidad europea aplicable a la configuración correspondiente.',
       '#certificaciones-contenido',
-      'EN'
+      'EN',
     ],
     [
       'Normas ASTM',
       'Referencias técnicas internacionales aplicables a materiales y componentes del sistema.',
       '#certificaciones-contenido',
-      'ASTM'
+      'ASTM',
     ],
     [
       'KICT – Corea del Sur',
       'Desarrollo y validación técnica asociada al Korea Institute of Civil Engineering and Building Technology.',
       '#certificaciones-contenido',
-      'KICT'
+      'KICT',
     ],
   ];
 
@@ -696,11 +707,9 @@ function Certifications() {
 
           <a
             className="referenceCard"
-            href="/colombia"
+            href="/colombia#marco-tecnico"
           >
-            <span className="docIcon">
-              CO
-            </span>
+            <span className="docIcon">CO</span>
 
             <span>
               <b>Marco técnico vigente</b>
@@ -746,126 +755,6 @@ function Certifications() {
             ))}
           </div>
         </article>
-      </div>
-
-      <div className="certBottom">
-        <span>
-          ◉ Ensayos internacionales de desempeño en seguridad vial.
-        </span>
-
-        <span>
-          ⌁ Sistema modular de alta durabilidad y resistencia a la corrosión.
-        </span>
-
-        <span>
-          ◌ Mayor visibilidad para los usuarios viales.
-        </span>
-
-        <span>
-          ◎ Presencia internacional con soporte técnico.
-        </span>
-      </div>
-    </section>
-  );
-}
-
-function Applications() {
-  const apps = [
-    [
-      'road',
-      'Separadores viales',
-      'Puede evaluarse en medianas y separadores donde el proyecto requiere contener y redirigir vehículos.',
-      'separadores.jpg'
-    ],
-    [
-      'road',
-      'Laterales de carretera',
-      'Puede considerarse en bordes de vía y arcenes con presencia de peligros u obstáculos laterales.',
-      'laterales.jpg'
-    ],
-    [
-      'tunnel',
-      'Entradas de túneles',
-      'Puede evaluarse en accesos donde la geometría, la transición y la visibilidad requieren una respuesta específica.',
-      'tuneles.jpg'
-    ],
-    [
-      'curve',
-      'Curvas y puntos críticos',
-      'Puede analizarse en tramos con mayor exposición a salidas de vía o impactos laterales.',
-      'curvas.jpg'
-    ],
-    [
-      'bridge',
-      'Puentes y viaductos',
-      'Su aplicación debe evaluarse según las condiciones y restricciones particulares de cada estructura.',
-      'puentes.jpg'
-    ],
-    [
-      'mountain',
-      'Laderas y taludes',
-      'Puede considerarse en zonas laterales con desniveles, geometría compleja u otros peligros asociados a una salida de vía.',
-      'laderas.jpg'
-    ],
-  ];
-
-  return (
-    <section
-      id="aplicaciones"
-      className="applications section light sectionAnchor"
-    >
-      <div className="applicationsHero">
-        <img
-          src="/assets/hero-road.jpg"
-          alt="Barrera Metálica con Rodillos en diferentes entornos viales"
-        />
-
-        <div className="applicationsOverlay" />
-
-        <div className="applicationsCopy">
-          <div className="eyebrow onDark">
-            <span />
-            EVALUACIÓN DE APLICACIÓN
-          </div>
-
-          <h2>
-            Dónde puede evaluarse
-            <br />
-            <em>su aplicación</em>
-          </h2>
-
-          <p>
-            No todos los proyectos requieren la misma solución. La
-            aplicación de un sistema de contención debe responder a
-            las condiciones de la vía, el riesgo identificado, el
-            desempeño requerido y el espacio disponible.
-          </p>
-        </div>
-      </div>
-
-      <div className="applicationsGrid">
-        {apps.map(([icon, title, text, file]) => (
-          <article
-            className="applicationCard"
-            key={title}
-          >
-            <div className="applicationHead">
-              <div className="appIcon">
-                <Icon name={icon} />
-              </div>
-
-              <div>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            </div>
-
-            <img
-              src={'/assets/apps/' + file}
-              alt={title}
-            />
-          </article>
-        ))}
       </div>
     </section>
   );
@@ -941,42 +830,43 @@ function Criteria() {
       'shield',
       'Nivel de contención (NC)',
       'Capacidad que tiene un sistema para retener y absorber una cantidad determinada de energía cinética transversal durante el choque de un vehículo fuera de control, evitando que este atraviese la barrera o se vuelque. Se determina mediante pruebas de impacto a escala real y se clasifica en rangos, desde nivel Normal NC1 hasta Muy Alto NC4, que corresponden a clases como N2, H1–H4 o L1–L4 en la norma europea EN 1317, o TL-2 a TL-5 en la norma estadounidense MASH.',
-      'note-nc'
+      'note-nc',
     ],
     [
       'shield',
       'ASI (Accident Severity Index) | Índice de Severidad de la Aceleración',
       'Indicador numérico que mide la magnitud del impacto y las desaceleraciones o fuerzas «G» transmitidas al habitáculo del vehículo durante la colisión. Cuantifica el nivel de riesgo de sufrir lesiones para los ocupantes.',
-      'note-asi'
+      'note-asi',
     ],
     [
       'width',
       'Deflexión dinámica (D)',
       'El máximo desplazamiento lateral dinámico que sufre la cara frontal del sistema, la más próxima al tráfico, durante el impacto directo del vehículo. Es el parámetro clave para clasificar la barrera según su rigidez —flexible, semirrígida o rígida— y permite determinar si la cara de la barrera se deformará afectando el espacio posterior.',
-      'note-deflexion'
+      'note-deflexion',
     ],
     [
       'width',
       'Anchura de trabajo (W)',
       'Distancia transversal medida entre la cara frontal de la barrera antes del choque y la posición lateral más alejada que alcanza cualquier parte esencial del sistema o del vehículo durante la deformación del impacto. Representa el espacio lateral total que requiere la barrera para funcionar adecuadamente y fija la distancia mínima a la que debe colocarse respecto a un obstáculo.',
-      'note-anchura'
+      'note-anchura',
     ],
     [
       'car',
       'Intrusión del vehículo (VI)',
       'Aplica principalmente al impacto de vehículos pesados —buses o camiones— y corresponde al máximo desplazamiento lateral dinámico de la parte superior o carrocería del vehículo por encima de la cara frontal de la barrera sin deformar, debido al cabeceo o inclinación lateral durante el choque.',
-      'note-intrusion'
+      'note-intrusion',
     ],
     [
       'turn',
       'Redireccionamiento',
       'Capacidad del sistema de contención para corregir la trayectoria del vehículo errante tras la colisión, encauzándolo de manera controlada y paralela al flujo vial.',
-      'note-redireccionamiento'
+      'note-redireccionamiento',
     ],
   ];
 
   const [openNote, setOpenNote] = useState<string | null>(null);
-  const [highlightedNote, setHighlightedNote] = useState<string | null>(null);
+  const [highlightedNote, setHighlightedNote] =
+    useState<string | null>(null);
 
   useEffect(() => {
     let highlightTimer: ReturnType<typeof setTimeout> | undefined;
@@ -1022,6 +912,7 @@ function Criteria() {
     };
 
     window.addEventListener('hashchange', syncHash);
+
     window.addEventListener(
       'technical-note-focus',
       onTechnicalNoteFocus as EventListener
@@ -1065,7 +956,7 @@ function Criteria() {
           </h2>
 
           <p>
-            La selección de un Sistema de contención vehicular debe
+            La selección de un sistema de contención vehicular debe
             evaluar la severidad del impacto, la deflexión, la anchura
             de trabajo, la intrusión y la capacidad de
             redireccionamiento.
@@ -1110,13 +1001,6 @@ function Criteria() {
 
               <div className="technicalNoteBody">
                 <p>{text}</p>
-
-                <a
-                  className="returnToPerformance"
-                  href="#desempeno"
-                >
-                  ↑ Volver a desempeño
-                </a>
               </div>
             </div>
           ))}
@@ -1191,9 +1075,7 @@ function Criteria() {
         </article>
 
         <article className="criteriaPanel radarPanel">
-          <h4>
-            COMPARACIÓN GRÁFICA DE DESEMPEÑO
-          </h4>
+          <h4>COMPARACIÓN GRÁFICA DE DESEMPEÑO</h4>
 
           <Radar />
 
@@ -1234,9 +1116,7 @@ function Criteria() {
       </div>
 
       <div className="criteriaFoot">
-        <span className="infoDot">
-          i
-        </span>
+        <span className="infoDot">i</span>
 
         <p>
           <b>
@@ -1253,7 +1133,118 @@ function Criteria() {
           severidad del impacto (ASI).
         </p>
       </div>
+
+      <PerformanceSummary />
     </section>
+  );
+}
+
+function PerformanceSummary() {
+  const metrics = [
+    ['H1 / H2 / H3', 'Nivel de contención'],
+    ['ASI ≤ 1.3', 'Severidad registrada'],
+    ['0,27 – 0,38 m', 'Deflexión dinámica'],
+    ['0,54 – 0,68 m', 'Anchura de trabajo'],
+    ['0,77 – 0,81 m', 'Intrusión del vehículo'],
+    ['Alta', 'Redireccionamiento'],
+  ];
+
+  return (
+    <div
+      id="desempeno"
+      style={{
+        marginTop: '54px',
+        paddingTop: '30px',
+        borderTop: '1px solid rgba(25,44,61,0.16)',
+      }}
+    >
+      <div
+        style={{
+          marginBottom: '24px',
+          fontSize: '11px',
+          fontWeight: 700,
+          letterSpacing: '0.16em',
+          textTransform: 'uppercase',
+          color: '#6D7B8E',
+        }}
+      >
+        Desempeño documentado
+      </div>
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns:
+            'repeat(auto-fit, minmax(180px, 1fr))',
+          borderTop: '1px solid rgba(25,44,61,0.12)',
+          borderBottom: '1px solid rgba(25,44,61,0.12)',
+        }}
+      >
+        {metrics.map(([value, label]) => (
+          <div
+            key={label}
+            style={{
+              padding: '22px 22px 22px 0',
+            }}
+          >
+            <strong
+              style={{
+                display: 'block',
+                color: '#192C3D',
+                fontSize: 'clamp(22px,2vw,30px)',
+                lineHeight: 1.1,
+                letterSpacing: '-0.025em',
+              }}
+            >
+              {value}
+            </strong>
+
+            <span
+              style={{
+                display: 'block',
+                marginTop: '7px',
+                color: '#6D7B8E',
+                fontSize: '13px',
+                lineHeight: 1.45,
+              }}
+            >
+              {label}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '10px 34px',
+          paddingTop: '18px',
+          color: '#6D7B8E',
+          fontSize: '13px',
+          lineHeight: 1.5,
+        }}
+      >
+        <span
+          style={{
+            color: '#192C3D',
+            fontWeight: 700,
+          }}
+        >
+          Condiciones de ensayo documentadas
+        </span>
+
+        <span>
+          <b style={{ color: '#192C3D' }}>105.8 km/h</b> · velocidad
+          indicada
+        </span>
+
+        <span>
+          <b style={{ color: '#192C3D' }}>15°–25°</b> · ángulo de
+          impacto
+        </span>
+      </div>
+    </div>
   );
 }
 
@@ -1339,7 +1330,7 @@ function Colombia() {
           </p>
 
           <a
-            href="/colombia"
+            href="/colombia#marco-tecnico"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -1373,11 +1364,7 @@ function Cases() {
             PRESENCIA INTERNACIONAL
           </div>
 
-          <h2>
-            Implementaciones
-            <br />
-            en diferentes mercados
-          </h2>
+          <h2>Presencia Internacional</h2>
 
           <p>
             La Barrera Metálica con Rodillos cuenta con presencia
@@ -1426,10 +1413,8 @@ function Cases() {
               </h4>
 
               <div>
-                {countries.map((c) => (
-                  <span key={c}>
-                    • {c}
-                  </span>
+                {countries.map((country) => (
+                  <span key={country}>• {country}</span>
                 ))}
               </div>
             </div>
@@ -1444,47 +1429,47 @@ function Gallery() {
   const photos = [
     [
       '/assets/gallery/01-median-strip.jpg',
-      'Barrera Metálica con Rodillos instalada en separador vial'
+      'Barrera Metálica con Rodillos instalada en separador vial',
     ],
     [
       '/assets/gallery/02-tunnel.jpg',
-      'Barrera Metálica con Rodillos instalada en entrada de túnel'
+      'Barrera Metálica con Rodillos instalada en entrada de túnel',
     ],
     [
       '/assets/gallery/03-curve.jpg',
-      'Barrera Metálica con Rodillos instalada en curva vial'
+      'Barrera Metálica con Rodillos instalada en curva vial',
     ],
     [
       '/assets/gallery/04-roadside.jpg',
-      'Barrera Metálica con Rodillos instalada en lateral de carretera'
+      'Barrera Metálica con Rodillos instalada en lateral de carretera',
     ],
     [
       '/assets/gallery/05-close-curve.jpg',
-      'Vista cercana de Barrera Metálica con Rodillos en curva'
+      'Vista cercana de Barrera Metálica con Rodillos en curva',
     ],
     [
       '/assets/gallery/06-autumn-curve.jpg',
-      'Barrera Metálica con Rodillos instalada en carretera de montaña'
+      'Barrera Metálica con Rodillos instalada en carretera de montaña',
     ],
     [
       '/assets/gallery/07-wide-curve.jpg',
-      'Barrera Metálica con Rodillos en curva de amplio radio'
+      'Barrera Metálica con Rodillos en curva de amplio radio',
     ],
     [
       '/assets/gallery/08-road-signs.jpg',
-      'Barrera Metálica con Rodillos instalada en corredor vial'
+      'Barrera Metálica con Rodillos instalada en corredor vial',
     ],
     [
       '/assets/gallery/09-centerline.jpg',
-      'Barrera Metálica con Rodillos instalada en mediana de carretera'
+      'Barrera Metálica con Rodillos instalada en mediana de carretera',
     ],
     [
       '/assets/gallery/10-closeup.jpg',
-      'Primer plano de rodillos EVA instalados en carretera'
+      'Primer plano de rodillos EVA instalados en carretera',
     ],
     [
       '/assets/gallery/11-winter-closeup.jpg',
-      'Barrera Metálica con Rodillos instalada en condiciones invernales'
+      'Barrera Metálica con Rodillos instalada en condiciones invernales',
     ],
   ];
 
@@ -1494,9 +1479,7 @@ function Gallery() {
     if (active === null) return;
 
     const key = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setActive(null);
-      }
+      if (e.key === 'Escape') setActive(null);
 
       if (e.key === 'ArrowRight') {
         setActive((active + 1) % photos.length);
@@ -1504,8 +1487,7 @@ function Gallery() {
 
       if (e.key === 'ArrowLeft') {
         setActive(
-          (active - 1 + photos.length) %
-            photos.length
+          (active - 1 + photos.length) % photos.length
         );
       }
     };
@@ -1539,8 +1521,8 @@ function Gallery() {
         </h2>
 
         <p>
-          Registro visual de implementaciones reales de la
-          Barrera Metálica con Rodillos.
+          Registro visual de implementaciones reales de la Barrera
+          Metálica con Rodillos.
         </p>
       </div>
 
@@ -1612,10 +1594,7 @@ function Gallery() {
             className="lightboxNav next"
             type="button"
             onClick={() =>
-              setActive(
-                (active + 1) %
-                  photos.length
-              )
+              setActive((active + 1) % photos.length)
             }
             aria-label="Imagen siguiente"
           >
@@ -1631,127 +1610,367 @@ function Contact() {
   return (
     <section
       id="contacto"
-      className="contact sectionAnchor"
+      className="sectionAnchor"
+      style={{
+        background: '#F5F2EA',
+        color: '#192C3D',
+        padding: '82px 24px 0',
+      }}
     >
-      <img
-        className="contactBg"
-        src="/assets/contact-road.jpg"
-        alt="Barrera Metálica con Rodillos instalada en carretera"
-      />
-
-      <div className="contactOverlay" />
-
-      <div className="contactCopy">
-        <div className="eyebrow onDark">
-          <span />
-          CONTACTO
-        </div>
-
-        <h2>
-          Hablemos de
-          <br />
-          su <em>proyecto vial</em>
-        </h2>
-
-        <p>
-          Cada proyecto tiene condiciones distintas. Podemos revisar la
-          información general del tramo y orientar una primera
-          evaluación técnica sobre la aplicación de la tecnología.
-        </p>
-
-        <div className="contactButtons">
-          <a
-            className="btn btnYellow"
-            href="mailto:contacto@barreraconrodillos.com?subject=Solicitud%20de%20cotización%20técnica"
+      <div
+        style={{
+          width: '100%',
+          maxWidth: '1440px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns:
+            'repeat(auto-fit, minmax(min(100%, 480px), 1fr))',
+          gap: '64px',
+          alignItems: 'start',
+        }}
+      >
+        <div>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#192C3D',
+            }}
           >
-            Solicitar cotización técnica <span>→</span>
-          </a>
+            <span
+              style={{
+                width: '34px',
+                height: '3px',
+                display: 'inline-block',
+                background: '#ECB537',
+              }}
+            />
+            Contacto
+          </div>
 
-          <a
-            className="btn btnGhost"
-            href="https://calendar.app.google/cWq6oxHw6p4u9mKKA"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h2
+            style={{
+              margin: '22px 0 0',
+              fontSize: 'clamp(42px,5vw,68px)',
+              lineHeight: 1.03,
+              letterSpacing: '-0.04em',
+              color: '#192C3D',
+            }}
           >
-            Agendar una reunión
-          </a>
+            Hablemos de
+            <br />
+            su{' '}
+            <em
+              style={{
+                color: '#ECB537',
+                fontStyle: 'normal',
+              }}
+            >
+              proyecto vial
+            </em>
+          </h2>
+
+          <p
+            style={{
+              margin: '26px 0 0',
+              maxWidth: '690px',
+              fontSize: '17px',
+              lineHeight: 1.7,
+              color: '#334755',
+            }}
+          >
+            Cada proyecto tiene condiciones distintas. Podemos revisar
+            la información general del tramo y orientar una primera
+            evaluación técnica sobre la aplicación de la tecnología.
+          </p>
+
+          <div
+            style={{
+              marginTop: '30px',
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '16px',
+            }}
+          >
+            <a
+              href="mailto:contacto@barreraconrodillos.com?subject=Solicitud%20de%20cotización%20técnica"
+              style={{
+                display: 'inline-flex',
+                minHeight: '52px',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0 24px',
+                background: '#ECB537',
+                color: '#192C3D',
+                textDecoration: 'none',
+                fontWeight: 700,
+                borderRadius: '3px',
+              }}
+            >
+              Solicitar cotización técnica →
+            </a>
+
+            <a
+              href="https://calendar.app.google/cWq6oxHw6p4u9mKKA"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                minHeight: '52px',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0 24px',
+                background: 'transparent',
+                color: '#192C3D',
+                textDecoration: 'none',
+                fontWeight: 700,
+                border: '1px solid rgba(25,44,61,.45)',
+                borderRadius: '3px',
+              }}
+            >
+              Agendar una reunión
+            </a>
+          </div>
+
+          <div
+            style={{
+              marginTop: '48px',
+              paddingTop: '26px',
+              borderTop: '1px solid rgba(25,44,61,.16)',
+              maxWidth: '760px',
+            }}
+          >
+            <strong
+              style={{
+                display: 'block',
+                color: '#192C3D',
+                fontSize: '18px',
+                lineHeight: 1.5,
+              }}
+            >
+              En 2025, 8.697 personas murieron en siniestros viales en
+              Colombia.
+            </strong>
+
+            <p
+              style={{
+                margin: '9px 0 0',
+                color: '#6D7B8E',
+                fontSize: '14px',
+                lineHeight: 1.6,
+              }}
+            >
+              Un 5,15 % más que en 2024.
+            </p>
+
+            <p
+              style={{
+                margin: '14px 0 0',
+                maxWidth: '700px',
+                color: '#334755',
+                fontSize: '15px',
+                lineHeight: 1.65,
+              }}
+            >
+              El reto es llevar soluciones técnicamente adecuadas a los
+              tramos donde realmente pueden contribuir a reducir las
+              consecuencias de un siniestro.
+            </p>
+
+            <p
+              style={{
+                margin: '14px 0 0',
+                color: '#ECB537',
+                fontSize: '17px',
+                lineHeight: 1.5,
+                fontWeight: 700,
+              }}
+            >
+              Porque un error humano no debería costar una vida.
+            </p>
+
+            <small
+              style={{
+                display: 'block',
+                marginTop: '12px',
+                color: '#6D7B8E',
+                fontSize: '12px',
+              }}
+            >
+              Fuente: Agencia Nacional de Seguridad Vial (ANSV), 2025.
+            </small>
+          </div>
         </div>
 
-        <div className="contactImpact">
-          <strong>
-            En 2025, 8.697 personas murieron en siniestros viales en Colombia.
-          </strong>
+        <aside
+          style={{
+            background: '#FFFFFF',
+            border: '1px solid rgba(25,44,61,.14)',
+            padding: '34px',
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '18px',
+            }}
+          >
+            <div
+              style={{
+                width: '66px',
+                height: '66px',
+                borderRadius: '50%',
+                background: '#ECB537',
+                color: '#192C3D',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+              }}
+            >
+              <Icon name="user" />
+            </div>
 
-          <span>
-            Un 5,15 % más que en 2024.
-          </span>
+            <div>
+              <h3
+                style={{
+                  margin: 0,
+                  color: '#192C3D',
+                  fontSize: '26px',
+                  lineHeight: 1.2,
+                }}
+              >
+                Vanessa Díaz Torres
+              </h3>
 
-          <span>
-            El reto es llevar soluciones técnicamente adecuadas a los
-            tramos donde realmente pueden contribuir a reducir las
-            consecuencias de un siniestro.
-          </span>
+              <p
+                style={{
+                  margin: '5px 0 0',
+                  color: '#6D7B8E',
+                  fontSize: '15px',
+                }}
+              >
+                Consultas técnicas y comerciales
+              </p>
+            </div>
+          </div>
 
-          <em>
-            Porque un error humano no debería costar una vida.
-          </em>
+          <div
+            style={{
+              marginTop: '28px',
+              paddingTop: '24px',
+              borderTop: '1px solid rgba(25,44,61,.14)',
+              display: 'grid',
+              gap: '18px',
+            }}
+          >
+            <p
+              style={{
+                margin: 0,
+                display: 'flex',
+                gap: '12px',
+                alignItems: 'center',
+                color: '#334755',
+              }}
+            >
+              <Icon name="pin" />
+              Valencia, España
+            </p>
 
-          <small>
-            Fuente: Agencia Nacional de Seguridad Vial (ANSV), 2025.
-          </small>
-        </div>
+            <a
+              href="tel:+34675123282"
+              style={{
+                display: 'flex',
+                gap: '12px',
+                alignItems: 'center',
+                color: '#334755',
+                textDecoration: 'none',
+              }}
+            >
+              <Icon name="phone" />
+              +34 675 123 282
+            </a>
+
+            <a
+              href="mailto:contacto@barreraconrodillos.com"
+              style={{
+                display: 'flex',
+                gap: '12px',
+                alignItems: 'center',
+                color: '#334755',
+                textDecoration: 'none',
+              }}
+            >
+              <Icon name="mail" />
+              contacto@barreraconrodillos.com
+            </a>
+
+            <p
+              style={{
+                margin: 0,
+                paddingTop: '20px',
+                borderTop: '1px solid rgba(25,44,61,.14)',
+                display: 'flex',
+                gap: '12px',
+                alignItems: 'center',
+                color: '#334755',
+              }}
+            >
+              <Icon name="globe" />
+              Atención para proyectos en Colombia.
+            </p>
+          </div>
+        </aside>
       </div>
 
-      <aside className="contactCard">
-        <div className="person">
-          <div className="personDot">
-            <Icon name="user" />
-          </div>
-
-          <div>
-            <h3>Vanessa Díaz Torres</h3>
-            <p>Consultas técnicas y comerciales</p>
-          </div>
-        </div>
-
-        <hr />
-
-        <p>
-          <Icon name="pin" />
-          Valencia, España
-        </p>
-
-        <a href="tel:+34675123282">
-          <Icon name="phone" />
-          +34 675 123 282
-        </a>
-
-        <a href="mailto:contacto@barreraconrodillos.com">
-          <Icon name="mail" />
-          contacto@barreraconrodillos.com
-        </a>
-
-        <hr />
-
-        <p>
-          <Icon name="globe" />
-          Atención para proyectos en Colombia.
-        </p>
-      </aside>
-
-      <footer className="footer">
+      <footer
+        style={{
+          width: '100%',
+          maxWidth: '1440px',
+          margin: '72px auto 0',
+          padding: '25px 0',
+          borderTop: '1px solid rgba(25,44,61,.16)',
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '18px',
+          color: '#6D7B8E',
+          fontSize: '12px',
+        }}
+      >
         <BrandMark small />
 
-        <nav>
+        <nav
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '18px',
+          }}
+        >
           {nav.map(([label, href]) => (
-            <a href={href} key={href}>
+            <a
+              href={href}
+              key={href}
+              style={{
+                color: '#334755',
+                textDecoration: 'none',
+              }}
+            >
               {label}
             </a>
           ))}
         </nav>
 
         <span>
-          © 2026 Barrera Metálica con Rodillos · Todos los derechos reservados.
+          © 2026 Barrera Metálica con Rodillos · Todos los derechos
+          reservados.
         </span>
       </footer>
     </section>
@@ -1768,17 +1987,12 @@ export default function Home() {
 
     onScroll();
 
-    window.addEventListener(
-      'scroll',
-      onScroll,
-      { passive: true }
-    );
+    window.addEventListener('scroll', onScroll, {
+      passive: true,
+    });
 
     return () =>
-      window.removeEventListener(
-        'scroll',
-        onScroll
-      );
+      window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
@@ -1787,9 +2001,7 @@ export default function Home() {
 
       <main>
         <Hero
-          onOpenVideo={() =>
-            setVideoOpen(true)
-          }
+          onOpenVideo={() => setVideoOpen(true)}
         />
 
         <Technology />
@@ -1797,8 +2009,6 @@ export default function Home() {
         <Advantages />
 
         <Certifications />
-
-        <Applications />
 
         <Criteria />
 
@@ -1813,9 +2023,7 @@ export default function Home() {
 
       <VideoModal
         open={videoOpen}
-        onClose={() =>
-          setVideoOpen(false)
-        }
+        onClose={() => setVideoOpen(false)}
       />
 
       <button
@@ -1828,7 +2036,7 @@ export default function Home() {
         onClick={() =>
           window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            behavior: 'smooth',
           })
         }
         aria-label="Volver al inicio"
