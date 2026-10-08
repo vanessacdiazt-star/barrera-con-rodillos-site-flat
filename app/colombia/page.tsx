@@ -211,7 +211,6 @@ export default function ColombiaPage() {
             </div>
           </div>
 
-          {/* MARCO + CERTIFICACIONES */}
           <div
             style={{
               marginTop: '52px',
@@ -281,7 +280,7 @@ export default function ColombiaPage() {
       {/* SEGURIDAD VIAL */}
       <section
         style={{
-          padding: '92px 24px',
+          padding: '78px 24px',
           background: '#FFFFFF',
         }}
       >
@@ -293,7 +292,7 @@ export default function ColombiaPage() {
             display: 'grid',
             gridTemplateColumns:
               'repeat(auto-fit, minmax(min(100%, 500px), 1fr))',
-            gap: '72px',
+            gap: '64px',
             alignItems: 'start',
           }}
         >
@@ -313,7 +312,7 @@ export default function ColombiaPage() {
 
             <h2
               style={{
-                margin: '20px 0 0',
+                margin: '18px 0 0',
                 maxWidth: '700px',
                 fontSize: 'clamp(36px, 3.8vw, 56px)',
                 lineHeight: 1.05,
@@ -322,15 +321,14 @@ export default function ColombiaPage() {
                 color: navy,
               }}
             >
-              Infraestructura pensada para reducir la severidad de los
-              siniestros
+              Infraestructura pensada para reducir las consecuencias de un siniestro
             </h2>
           </div>
 
           <div
             style={{
               maxWidth: '650px',
-              paddingTop: '26px',
+              paddingTop: '20px',
             }}
           >
             <p
@@ -341,14 +339,14 @@ export default function ColombiaPage() {
                 color: text,
               }}
             >
-              La seguridad vial no depende únicamente de prevenir que ocurra
-              un siniestro. También depende de cómo responde la infraestructura
+              La seguridad vial no depende únicamente de evitar que ocurra un
+              siniestro. También depende de cómo responde la infraestructura
               cuando un vehículo pierde el control.
             </p>
 
             <p
               style={{
-                marginTop: '24px',
+                marginTop: '22px',
                 marginBottom: 0,
                 fontSize: '16px',
                 lineHeight: 1.7,
@@ -356,14 +354,14 @@ export default function ColombiaPage() {
               }}
             >
               Los sistemas de contención vehicular forman parte de esa
-              respuesta, al contribuir a contener, absorber energía y gestionar
-              la trayectoria posterior al impacto.
+              respuesta, al contribuir a contener, absorber energía y orientar
+              la trayectoria del vehículo después del impacto.
             </p>
 
             <div
               style={{
-                marginTop: '34px',
-                paddingTop: '20px',
+                marginTop: '30px',
+                paddingTop: '18px',
                 borderTop: '1px solid rgba(25,44,61,0.16)',
               }}
             >
@@ -378,7 +376,7 @@ export default function ColombiaPage() {
               >
                 El objetivo no es sustituir la prevención, sino complementarla
                 con infraestructura capaz de reducir las consecuencias de una
-                salida de vía o impacto.
+                salida de vía o un impacto.
               </p>
             </div>
           </div>
@@ -388,7 +386,7 @@ export default function ColombiaPage() {
       {/* TECNOLOGÍA */}
       <section
         style={{
-          padding: '92px 24px',
+          padding: '78px 24px',
           background: cream,
         }}
       >
@@ -400,7 +398,7 @@ export default function ColombiaPage() {
             display: 'grid',
             gridTemplateColumns:
               'repeat(auto-fit, minmax(min(100%, 500px), 1fr))',
-            gap: '72px',
+            gap: '64px',
             alignItems: 'start',
           }}
         >
@@ -420,7 +418,7 @@ export default function ColombiaPage() {
 
             <h2
               style={{
-                margin: '20px 0 0',
+                margin: '18px 0 0',
                 fontSize: 'clamp(36px, 3.8vw, 56px)',
                 lineHeight: 1.04,
                 letterSpacing: '-0.035em',
@@ -433,7 +431,7 @@ export default function ColombiaPage() {
 
             <p
               style={{
-                marginTop: '28px',
+                marginTop: '26px',
                 marginBottom: 0,
                 maxWidth: '660px',
                 fontSize: '17px',
@@ -442,14 +440,14 @@ export default function ColombiaPage() {
               }}
             >
               Es un sistema de contención vehicular que incorpora elementos
-              tipo rodillo dentro de una estructura metálica para gestionar
-              la energía generada durante un impacto y contribuir al
-              redireccionamiento del vehículo.
+              tipo rodillo dentro de una estructura metálica para ayudar a
+              gestionar la energía del impacto y contribuir al
+              redireccionamiento controlado del vehículo.
             </p>
 
             <p
               style={{
-                marginTop: '22px',
+                marginTop: '20px',
                 marginBottom: 0,
                 maxWidth: '660px',
                 fontSize: '15px',
@@ -458,7 +456,7 @@ export default function ColombiaPage() {
               }}
             >
               En Colombia, esta tecnología fue regulada inicialmente mediante
-              el Artículo 732-22. Desde 2026, su contenido técnico se integra
+              el Artículo 732-22. Desde 2026, su tratamiento técnico se integra
               dentro del Artículo 730-22, correspondiente a las barreras
               semirrígidas y flexibles.
             </p>
@@ -480,7 +478,7 @@ export default function ColombiaPage() {
 
             <div
               style={{
-                marginTop: '20px',
+                marginTop: '18px',
                 borderTop: '1px solid rgba(25,44,61,0.16)',
               }}
             >
@@ -507,7 +505,7 @@ export default function ColombiaPage() {
                     display: 'grid',
                     gridTemplateColumns: '70px 1fr',
                     gap: '20px',
-                    padding: '26px 0',
+                    padding: '24px 0',
                     borderBottom: '1px solid rgba(25,44,61,0.16)',
                   }}
                 >
@@ -551,11 +549,109 @@ export default function ColombiaPage() {
         </div>
       </section>
 
+      {/* SKETCH DEL SISTEMA */}
+      <section
+        style={{
+          padding: '54px 24px 64px',
+          background: '#FFFFFF',
+        }}
+      >
+        <div
+          style={{
+            width: '100%',
+            maxWidth: '1440px',
+            margin: '0 auto',
+          }}
+        >
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
+              gap: '48px',
+              alignItems: 'end',
+              marginBottom: '32px',
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  color: yellow,
+                }}
+              >
+                Detalle del sistema
+              </p>
+
+              <h2
+                style={{
+                  margin: '16px 0 0',
+                  maxWidth: '680px',
+                  fontSize: 'clamp(34px, 3.5vw, 52px)',
+                  lineHeight: 1.05,
+                  letterSpacing: '-0.035em',
+                  fontWeight: 700,
+                  color: navy,
+                }}
+              >
+                Una solución diseñada como un sistema
+              </h2>
+            </div>
+
+            <p
+              style={{
+                margin: 0,
+                maxWidth: '600px',
+                fontSize: '16px',
+                lineHeight: 1.7,
+                color: muted,
+              }}
+            >
+              Su comportamiento depende de la integración entre la estructura,
+              los elementos rotacionales y los componentes que conforman la
+              configuración ensayada.
+            </p>
+          </div>
+
+          <div
+            style={{
+              overflow: 'hidden',
+              background: cream,
+            }}
+          >
+            <img
+              src="/assets/roller-barrier-sketch.png"
+              alt="Ilustración técnica de la Barrera Metálica con Rodillos"
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+              }}
+            />
+          </div>
+
+          <p
+            style={{
+              margin: '12px 0 0',
+              fontSize: '12px',
+              lineHeight: 1.5,
+              color: muted,
+            }}
+          >
+            Ilustración referencial del sistema y de su configuración.
+          </p>
+        </div>
+      </section>
+
       {/* MARCO NORMATIVO */}
       <section
         id="marco-colombia"
         style={{
-          padding: '96px 24px',
+          padding: '78px 24px',
           background: navy,
           color: '#FFFFFF',
         }}
@@ -582,7 +678,7 @@ export default function ColombiaPage() {
 
           <h2
             style={{
-              margin: '20px 0 0',
+              margin: '18px 0 0',
               maxWidth: '930px',
               fontSize: 'clamp(38px, 4vw, 58px)',
               lineHeight: 1.04,
@@ -596,7 +692,7 @@ export default function ColombiaPage() {
           <p
             style={{
               maxWidth: '840px',
-              marginTop: '26px',
+              marginTop: '24px',
               fontSize: '17px',
               lineHeight: 1.7,
               color: 'rgba(255,255,255,0.72)',
@@ -610,7 +706,7 @@ export default function ColombiaPage() {
 
           <div
             style={{
-              marginTop: '52px',
+              marginTop: '46px',
               display: 'grid',
               gridTemplateColumns:
                 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -620,7 +716,7 @@ export default function ColombiaPage() {
           >
             <div
               style={{
-                padding: '34px 34px 36px 0',
+                padding: '30px 30px 32px 0',
               }}
             >
               <p
@@ -636,7 +732,7 @@ export default function ColombiaPage() {
 
               <h3
                 style={{
-                  margin: '11px 0 0',
+                  margin: '10px 0 0',
                   fontSize: '23px',
                 }}
               >
@@ -658,7 +754,7 @@ export default function ColombiaPage() {
 
             <div
               style={{
-                padding: '34px',
+                padding: '30px',
                 borderLeft: '1px solid rgba(255,255,255,0.16)',
               }}
             >
@@ -675,7 +771,7 @@ export default function ColombiaPage() {
 
               <h3
                 style={{
-                  margin: '11px 0 0',
+                  margin: '10px 0 0',
                   fontSize: '23px',
                 }}
               >
@@ -697,7 +793,7 @@ export default function ColombiaPage() {
 
             <div
               style={{
-                padding: '34px',
+                padding: '30px',
                 borderLeft: '1px solid rgba(255,255,255,0.16)',
               }}
             >
@@ -714,7 +810,7 @@ export default function ColombiaPage() {
 
               <h3
                 style={{
-                  margin: '11px 0 0',
+                  margin: '10px 0 0',
                   fontSize: '23px',
                 }}
               >
@@ -737,9 +833,9 @@ export default function ColombiaPage() {
 
           <div
             style={{
-              marginTop: '34px',
+              marginTop: '30px',
               maxWidth: '900px',
-              paddingLeft: '20px',
+              paddingLeft: '18px',
               borderLeft: `3px solid ${yellow}`,
             }}
           >
@@ -763,7 +859,7 @@ export default function ColombiaPage() {
       {/* SELECCIÓN TÉCNICA */}
       <section
         style={{
-          padding: '96px 24px',
+          padding: '78px 24px',
           background: '#FFFFFF',
         }}
       >
@@ -779,7 +875,7 @@ export default function ColombiaPage() {
               display: 'grid',
               gridTemplateColumns:
                 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
-              gap: '60px',
+              gap: '56px',
               alignItems: 'end',
             }}
           >
@@ -799,7 +895,7 @@ export default function ColombiaPage() {
 
               <h2
                 style={{
-                  margin: '20px 0 0',
+                  margin: '18px 0 0',
                   maxWidth: '760px',
                   fontSize: 'clamp(38px, 4vw, 58px)',
                   lineHeight: 1.04,
@@ -830,10 +926,10 @@ export default function ColombiaPage() {
 
           <div
             style={{
-              marginTop: '52px',
+              marginTop: '46px',
               display: 'grid',
               gridTemplateColumns:
-                'repeat(auto-fit, minmax(300px, 1fr))',
+                'repeat(auto-fit, minmax(280px, 1fr))',
               borderTop: '1px solid rgba(25,44,61,0.16)',
             }}
           >
@@ -862,7 +958,7 @@ export default function ColombiaPage() {
               <div
                 key={code}
                 style={{
-                  padding: '32px 34px 34px 0',
+                  padding: '28px 30px 30px 0',
                   borderBottom: '1px solid rgba(25,44,61,0.16)',
                 }}
               >
@@ -905,7 +1001,7 @@ export default function ColombiaPage() {
 
           <div
             style={{
-              marginTop: '42px',
+              marginTop: '36px',
               maxWidth: '900px',
             }}
           >
@@ -925,253 +1021,24 @@ export default function ColombiaPage() {
             <p
               style={{
                 margin: '12px 0 0',
-                fontSize: '17px',
+                maxWidth: '820px',
+                fontSize: '16px',
                 lineHeight: 1.7,
                 color: text,
               }}
             >
-              Una vez definidos los requerimientos del proyecto, la selección
-              debe realizarse entre sistemas cuyo desempeño haya sido
-              acreditado mediante ensayos de choque y documentación técnica
-              conforme a los estándares aplicables.
+              Una vez entendido el riesgo del tramo, se selecciona el sistema
+              que responde a esas condiciones y cuyo comportamiento ha sido
+              demostrado mediante ensayos de impacto y documentación técnica.
             </p>
           </div>
         </div>
       </section>
+
       {/* DESEMPEÑO DOCUMENTADO */}
-<section
-  style={{
-    padding: '96px 24px',
-    background: cream,
-  }}
->
-  <div
-    style={{
-      width: '100%',
-      maxWidth: '1440px',
-      margin: '0 auto',
-    }}
-  >
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns:
-          'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
-        gap: '64px',
-        alignItems: 'end',
-      }}
-    >
-      <div>
-        <p
-          style={{
-            margin: 0,
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.18em',
-            textTransform: 'uppercase',
-            color: yellow,
-          }}
-        >
-          Desempeño documentado
-        </p>
-
-        <h2
-          style={{
-            margin: '20px 0 0',
-            maxWidth: '780px',
-            fontSize: 'clamp(38px, 4vw, 58px)',
-            lineHeight: 1.04,
-            letterSpacing: '-0.035em',
-            fontWeight: 700,
-            color: navy,
-          }}
-        >
-          El desempeño se demuestra mediante ensayos de impacto a escala real
-        </h2>
-      </div>
-
-      <p
-        style={{
-          margin: 0,
-          maxWidth: '640px',
-          fontSize: '17px',
-          lineHeight: 1.7,
-          color: muted,
-        }}
-      >
-        Los sistemas de contención vehicular deben acreditar su comportamiento
-        mediante documentación técnica y ensayos realizados bajo estándares
-        reconocidos. Estos ensayos permiten evaluar no solo la capacidad de
-        contención, sino también la deformación del sistema, la trayectoria del
-        vehículo y la severidad del impacto.
-      </p>
-    </div>
-
-    {/* ESTÁNDARES Y DOCUMENTOS */}
-    <div
-      style={{
-        marginTop: '54px',
-        display: 'grid',
-        gridTemplateColumns:
-          'repeat(auto-fit, minmax(260px, 1fr))',
-        borderTop: '1px solid rgba(25,44,61,0.16)',
-        borderBottom: '1px solid rgba(25,44,61,0.16)',
-      }}
-    >
-      {[
-        [
-          'EN 1317',
-          'Estándar europeo de ensayo',
-          'Evalúa el comportamiento de los sistemas de contención mediante ensayos de impacto a escala real, incluyendo parámetros de contención, severidad y deformación.',
-        ],
-        [
-          'MASH',
-          'Protocolo estadounidense de ensayo',
-          'Establece condiciones de impacto y criterios de evaluación para sistemas de contención vehicular en Estados Unidos.',
-        ],
-        [
-          'CE',
-          'Conformidad europea',
-          'Documenta la conformidad del producto con los requisitos aplicables para su comercialización dentro del marco europeo correspondiente.',
-        ],
-        [
-          'FHWA',
-          'Elegibilidad documentada',
-          'La documentación emitida por la Federal Highway Administration respalda la elegibilidad del sistema evaluado para el marco vial estadounidense correspondiente.',
-        ],
-      ].map(([code, title, description], index) => (
-        <div
-          key={code}
-          style={{
-            padding: '32px 30px',
-            borderRight:
-              index < 3
-                ? '1px solid rgba(25,44,61,0.14)'
-                : 'none',
-          }}
-        >
-          <p
-            style={{
-              margin: 0,
-              fontSize: '13px',
-              fontWeight: 700,
-              color: yellow,
-            }}
-          >
-            {code}
-          </p>
-
-          <h3
-            style={{
-              margin: '10px 0 0',
-              fontSize: '20px',
-              lineHeight: 1.25,
-              color: navy,
-            }}
-          >
-            {title}
-          </h3>
-
-          <p
-            style={{
-              margin: '12px 0 0',
-              fontSize: '15px',
-              lineHeight: 1.65,
-              color: muted,
-            }}
-          >
-            {description}
-          </p>
-        </div>
-      ))}
-    </div>
-
-    {/* QUÉ SE MIDE */}
-    <div
-      style={{
-        marginTop: '52px',
-        display: 'grid',
-        gridTemplateColumns:
-          'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
-        gap: '64px',
-        alignItems: 'start',
-      }}
-    >
-      <div>
-        <p
-          style={{
-            margin: 0,
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.16em',
-            textTransform: 'uppercase',
-            color: yellow,
-          }}
-        >
-          Qué se evalúa
-        </p>
-
-        <h3
-          style={{
-            margin: '16px 0 0',
-            maxWidth: '650px',
-            fontSize: 'clamp(30px, 3vw, 44px)',
-            lineHeight: 1.08,
-            letterSpacing: '-0.025em',
-            color: navy,
-          }}
-        >
-          No basta con alcanzar un nivel de contención
-        </h3>
-      </div>
-
-      <div>
-        <p
-          style={{
-            margin: 0,
-            fontSize: '16px',
-            lineHeight: 1.7,
-            color: text,
-          }}
-        >
-          Dos sistemas que alcanzan un nivel de contención comparable pueden
-          presentar comportamientos diferentes durante el impacto. Por eso,
-          la evaluación también considera la anchura de trabajo, la deflexión
-          dinámica, la severidad del impacto y el comportamiento posterior
-          del vehículo.
-        </p>
-
-        <div
-          style={{
-            marginTop: '28px',
-            paddingTop: '20px',
-            borderTop: '1px solid rgba(25,44,61,0.16)',
-          }}
-        >
-          <p
-            style={{
-              margin: 0,
-              fontSize: '14px',
-              lineHeight: 1.65,
-              color: navy,
-              fontWeight: 600,
-            }}
-          >
-            La metodología colombiana exige que la documentación del sistema
-            permita verificar que el ejemplar instalado corresponde al sistema
-            efectivamente ensayado.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      
-      {/* CONTACTO */}
       <section
-        id="contacto-colombia"
         style={{
-          padding: '92px 24px',
+          padding: '78px 24px',
           background: cream,
         }}
       >
@@ -1180,65 +1047,366 @@ export default function ColombiaPage() {
             width: '100%',
             maxWidth: '1440px',
             margin: '0 auto',
-            display: 'grid',
-            gridTemplateColumns:
-              'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
-            gap: '72px',
-            alignItems: 'end',
           }}
         >
-          <div>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
+              gap: '56px',
+              alignItems: 'end',
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  color: yellow,
+                }}
+              >
+                Desempeño documentado
+              </p>
+
+              <h2
+                style={{
+                  margin: '18px 0 0',
+                  maxWidth: '780px',
+                  fontSize: 'clamp(38px, 4vw, 58px)',
+                  lineHeight: 1.04,
+                  letterSpacing: '-0.035em',
+                  fontWeight: 700,
+                  color: navy,
+                }}
+              >
+                El desempeño se demuestra mediante ensayos de impacto a escala real
+              </h2>
+            </div>
+
             <p
               style={{
                 margin: 0,
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '0.18em',
-                textTransform: 'uppercase',
-                color: yellow,
-              }}
-            >
-              Proyectos en Colombia
-            </p>
-
-            <h2
-              style={{
-                margin: '20px 0 0',
-                maxWidth: '760px',
-                fontSize: 'clamp(38px, 4vw, 58px)',
-                lineHeight: 1.04,
-                letterSpacing: '-0.035em',
-                fontWeight: 700,
-                color: navy,
-              }}
-            >
-              Evaluemos las condiciones técnicas de su proyecto
-            </h2>
-          </div>
-
-          <div>
-            <p
-              style={{
-                maxWidth: '620px',
-                margin: 0,
+                maxWidth: '640px',
                 fontSize: '17px',
                 lineHeight: 1.7,
                 color: muted,
               }}
             >
-              Global Fund Group S.A.S. cuenta con la distribución exclusiva
-              de la Barrera Metálica con Rodillos en Colombia y acompaña los
-              proyectos con respaldo técnico de los fabricantes para
-              instalación, mantenimiento y soporte especializado.
+              Los sistemas de contención vehicular deben acreditar su
+              comportamiento mediante documentación técnica y ensayos
+              realizados bajo estándares reconocidos.
             </p>
+          </div>
 
-            <div
-              style={{
-                marginTop: '26px',
-                paddingTop: '22px',
-                borderTop: '1px solid rgba(25,44,61,0.16)',
-              }}
-            >
+          <div
+            style={{
+              marginTop: '46px',
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(240px, 1fr))',
+              borderTop: '1px solid rgba(25,44,61,0.16)',
+              borderBottom: '1px solid rgba(25,44,61,0.16)',
+            }}
+          >
+            {[
+              [
+                'EN 1317',
+                'Estándar europeo de ensayo',
+                'Evalúa el comportamiento del sistema mediante ensayos de impacto a escala real.',
+              ],
+              [
+                'MASH',
+                'Protocolo estadounidense de ensayo',
+                'Establece condiciones de impacto y criterios de evaluación para sistemas de contención vehicular.',
+              ],
+              [
+                'CE',
+                'Conformidad europea',
+                'Documenta la conformidad del producto con los requisitos aplicables en el marco europeo.',
+              ],
+              [
+                'FHWA',
+                'Elegibilidad documentada',
+                'Respalda la elegibilidad del sistema evaluado dentro del marco vial estadounidense correspondiente.',
+              ],
+            ].map(([code, title, description]) => (
+              <div
+                key={code}
+                style={{
+                  padding: '28px 28px 30px 0',
+                }}
+              >
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: '13px',
+                    fontWeight: 700,
+                    color: yellow,
+                  }}
+                >
+                  {code}
+                </p>
+
+                <h3
+                  style={{
+                    margin: '10px 0 0',
+                    fontSize: '20px',
+                    lineHeight: 1.25,
+                    color: navy,
+                  }}
+                >
+                  {title}
+                </h3>
+
+                <p
+                  style={{
+                    margin: '12px 0 0',
+                    fontSize: '15px',
+                    lineHeight: 1.65,
+                    color: muted,
+                  }}
+                >
+                  {description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div
+            style={{
+              marginTop: '38px',
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
+              gap: '48px',
+              alignItems: 'start',
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  color: yellow,
+                }}
+              >
+                Qué se evalúa
+              </p>
+
+              <h3
+                style={{
+                  margin: '14px 0 0',
+                  maxWidth: '650px',
+                  fontSize: 'clamp(30px, 3vw, 44px)',
+                  lineHeight: 1.08,
+                  letterSpacing: '-0.025em',
+                  color: navy,
+                }}
+              >
+                No basta con alcanzar un nivel de contención
+              </h3>
+            </div>
+
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '16px',
+                  lineHeight: 1.7,
+                  color: text,
+                }}
+              >
+                Dos sistemas que alcanzan un nivel de contención comparable
+                pueden presentar comportamientos diferentes durante el impacto.
+                Por eso también se consideran la anchura de trabajo, la
+                deflexión dinámica, la severidad y el comportamiento posterior
+                del vehículo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EVALUACIÓN DE APLICACIÓN */}
+      <section
+        id="contacto-colombia"
+        style={{
+          padding: '78px 24px',
+          background: '#FFFFFF',
+        }}
+      >
+        <div
+          style={{
+            width: '100%',
+            maxWidth: '1440px',
+            margin: '0 auto',
+          }}
+        >
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
+              gap: '64px',
+              alignItems: 'start',
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  color: yellow,
+                }}
+              >
+                Evaluación de aplicación
+              </p>
+
+              <h2
+                style={{
+                  margin: '18px 0 0',
+                  maxWidth: '720px',
+                  fontSize: 'clamp(38px, 4vw, 56px)',
+                  lineHeight: 1.04,
+                  letterSpacing: '-0.035em',
+                  fontWeight: 700,
+                  color: navy,
+                }}
+              >
+                Evaluemos si esta tecnología aplica a su proyecto
+              </h2>
+
+              <p
+                style={{
+                  margin: '24px 0 0',
+                  maxWidth: '680px',
+                  fontSize: '17px',
+                  lineHeight: 1.7,
+                  color: text,
+                }}
+              >
+                No todos los proyectos viales requieren la misma solución.
+                La aplicación de un sistema de contención debe evaluarse
+                según las condiciones de la vía, el riesgo identificado,
+                el nivel de contención requerido y el espacio disponible.
+              </p>
+            </div>
+
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  color: yellow,
+                }}
+              >
+                Escenarios de evaluación
+              </p>
+
+              <div
+                style={{
+                  marginTop: '18px',
+                  borderTop: '1px solid rgba(25,44,61,0.16)',
+                }}
+              >
+                {[
+                  'Obstáculos o estructuras próximas a la vía',
+                  'Separadores centrales y medianas',
+                  'Taludes, desniveles y zonas laterales de riesgo',
+                  'Tramos con espacio lateral restringido',
+                ].map((item, index) => (
+                  <div
+                    key={item}
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: '42px 1fr',
+                      gap: '16px',
+                      padding: '18px 0',
+                      borderBottom: '1px solid rgba(25,44,61,0.16)',
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: '12px',
+                        fontWeight: 700,
+                        color: yellow,
+                      }}
+                    >
+                      0{index + 1}
+                    </span>
+
+                    <span
+                      style={{
+                        fontSize: '16px',
+                        lineHeight: 1.5,
+                        color: navy,
+                        fontWeight: 600,
+                      }}
+                    >
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <p
+                style={{
+                  margin: '20px 0 0',
+                  fontSize: '14px',
+                  lineHeight: 1.65,
+                  color: muted,
+                }}
+              >
+                La presencia de uno de estos escenarios no determina por sí
+                sola la instalación de una barrera. Cada tramo requiere una
+                evaluación específica de sus condiciones y riesgos.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              marginTop: '50px',
+              paddingTop: '30px',
+              borderTop: '1px solid rgba(25,44,61,0.18)',
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
+              gap: '48px',
+              alignItems: 'end',
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  maxWidth: '700px',
+                  fontSize: '16px',
+                  lineHeight: 1.7,
+                  color: muted,
+                }}
+              >
+                Global Fund Group S.A.S. cuenta con la distribución exclusiva
+                de la Barrera Metálica con Rodillos en Colombia y acompaña los
+                proyectos con respaldo técnico de los fabricantes para
+                selección, instalación, mantenimiento y soporte especializado.
+              </p>
+            </div>
+
+            <div>
               <p
                 style={{
                   margin: 0,
@@ -1251,26 +1419,26 @@ export default function ColombiaPage() {
                 <br />
                 <strong>Atención:</strong> Colombia
               </p>
-            </div>
 
-            <a
-              href="mailto:contacto@barreraconrodillos.com"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: '52px',
-                marginTop: '26px',
-                padding: '0 25px',
-                background: yellow,
-                color: navy,
-                textDecoration: 'none',
-                fontWeight: 700,
-                borderRadius: '3px',
-              }}
-            >
-              Solicitar información técnica
-            </a>
+              <a
+                href="mailto:contacto@barreraconrodillos.com"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minHeight: '52px',
+                  marginTop: '22px',
+                  padding: '0 25px',
+                  background: yellow,
+                  color: navy,
+                  textDecoration: 'none',
+                  fontWeight: 700,
+                  borderRadius: '3px',
+                }}
+              >
+                Solicitar información técnica →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1278,7 +1446,7 @@ export default function ColombiaPage() {
       {/* FOOTER */}
       <footer
         style={{
-          padding: '26px 24px',
+          padding: '24px',
           background: navy,
           color: 'rgba(255,255,255,0.72)',
         }}
@@ -1315,9 +1483,9 @@ export default function ColombiaPage() {
           color: yellow,
           border: `1px solid ${yellow}`,
           textDecoration: 'none',
-          fontSize: '23px',
+          fontSize: '22px',
           fontWeight: 700,
-          boxShadow: '0 8px 24px rgba(25,44,61,0.18)',
+          boxShadow: '0 8px 24px rgba(25,44,61,0.16)',
           zIndex: 50,
         }}
       >
