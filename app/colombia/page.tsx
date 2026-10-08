@@ -1085,6 +1085,7 @@ export default function ColombiaPage() {
           borderRadius: '50%',
           background: navy,
           color: yellow,
+          border: `1px solid ${yellow}`,
           textDecoration: 'none',
           fontSize: '23px',
           fontWeight: 700,
