@@ -3,232 +3,312 @@ export default function ColombiaPage() {
     <main
       style={{
         background: '#F5F2EA',
-        color: '#A97712',
+        color: '#192C3D',
       }}
     >
       <section
         style={{
           minHeight: '92vh',
-          padding: '48px 28px 32px',
+          padding: '32px 24px 28px',
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
+          alignItems: 'center',
         }}
       >
         <div
           style={{
             width: '100%',
-            maxWidth: '1380px',
+            maxWidth: '1440px',
             margin: '0 auto',
           }}
         >
           {/* Eyebrow */}
-          <p
-            style={{
-              margin: 0,
-              fontSize: '12px',
-              fontWeight: 700,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: '#192C3D',
-            }}
-          >
-            Colombia · Sistemas de contención vehicular
-          </p>
-
-          {/* Main headline */}
           <div
             style={{
-              marginTop: '90px',
-              maxWidth: '1180px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              marginBottom: '58px',
             }}
           >
-            <h1
+            {/* Motivo Roddy */}
+            <div
+              aria-hidden="true"
               style={{
-                margin: 0,
-                fontSize: 'clamp(52px, 8vw, 116px)',
-                lineHeight: 0.94,
-                letterSpacing: '-0.055em',
-                fontWeight: 500,
+                display: 'flex',
+                gap: '5px',
+                alignItems: 'center',
               }}
             >
-              Barrera Metálica
-              <br />
-              con Rodillos
-              <br />
               <span
                 style={{
-                  fontStyle: 'italic',
-                  fontWeight: 400,
-                  color: '#53616C',
+                  width: '9px',
+                  height: '24px',
+                  border: '2px solid #ECB537',
+                  borderRadius: '999px',
+                  display: 'block',
+                  transform: 'rotate(18deg)',
                 }}
-              >
-                en Colombia.
-              </span>
-            </h1>
-          </div>
+              />
+              <span
+                style={{
+                  width: '9px',
+                  height: '24px',
+                  border: '2px solid #ECB537',
+                  borderRadius: '999px',
+                  display: 'block',
+                  transform: 'rotate(18deg)',
+                }}
+              />
+            </div>
 
-          {/* Supporting content */}
-          <div
-            style={{
-              marginTop: '56px',
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '48px',
-              alignItems: 'end',
-            }}
-          >
-            <div
+            <p
               style={{
-                maxWidth: '660px',
+                margin: 0,
+                fontSize: '12px',
+                fontWeight: 700,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: '#192C3D',
               }}
             >
-              <p
+              Colombia · Sistemas de contención vehicular
+            </p>
+          </div>
+
+          {/* Hero grid */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(min(100%, 520px), 1fr))',
+              gap: '64px',
+              alignItems: 'center',
+            }}
+          >
+            {/* Left */}
+            <div>
+              <h1
                 style={{
                   margin: 0,
-                  fontSize: 'clamp(18px, 2vw, 24px)',
-                  lineHeight: 1.5,
+                  fontSize: 'clamp(58px, 7.4vw, 108px)',
+                  lineHeight: 0.95,
+                  letterSpacing: '-0.055em',
+                  fontWeight: 500,
+                  color: '#192C3D',
+                }}
+              >
+                Barrera Metálica
+                <br />
+                con Rodillos
+                <br />
+                <span
+                  style={{
+                    fontStyle: 'italic',
+                    fontWeight: 400,
+                    color: '#66727C',
+                  }}
+                >
+                  en Colombia.
+                </span>
+              </h1>
+
+              <p
+                style={{
+                  maxWidth: '660px',
+                  marginTop: '40px',
+                  marginBottom: 0,
+                  fontSize: 'clamp(19px, 1.7vw, 24px)',
+                  lineHeight: 1.45,
                   color: '#334755',
                 }}
               >
                 Tecnología de contención vehicular con especificación
-                técnica aplicable en Colombia, respaldada por
+                técnica aplicable en Colombia y respaldo en
                 certificaciones internacionales.
               </p>
 
               <p
                 style={{
-                  marginTop: '24px',
+                  maxWidth: '650px',
+                  marginTop: '22px',
                   marginBottom: 0,
-                  maxWidth: '610px',
                   fontSize: '16px',
                   lineHeight: 1.65,
-                  color: '#63717B',
+                  color: '#66727C',
                 }}
               >
                 Global Fund Group S.A.S. cuenta con la distribución
-                exclusiva en Colombia, con respaldo y soporte técnico
-                de los fabricantes para instalación y mantenimiento.
+                exclusiva en Colombia, con respaldo y soporte técnico de
+                los fabricantes para instalación y mantenimiento.
+              </p>
+
+              {/* Actions */}
+              <div
+                style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '22px',
+                  alignItems: 'center',
+                  marginTop: '34px',
+                }}
+              >
+                <a
+                  href="#contacto-colombia"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minHeight: '54px',
+                    padding: '0 25px',
+                    background: '#ECB537',
+                    color: '#192C3D',
+                    textDecoration: 'none',
+                    fontSize: '15px',
+                    fontWeight: 700,
+                    borderRadius: '3px',
+                  }}
+                >
+                  Solicitar información técnica
+                </a>
+
+                <a
+                  href="/art_0732_inv_2022.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    minHeight: '54px',
+                    color: '#192C3D',
+                    textDecoration: 'none',
+                    fontSize: '15px',
+                    fontWeight: 600,
+                    borderBottom: '1px solid rgba(25,44,61,0.35)',
+                  }}
+                >
+                  Consultar Artículo 732-22 INVÍAS ↗
+                </a>
+              </div>
+            </div>
+
+            {/* Right image */}
+            <div
+              style={{
+                position: 'relative',
+                minHeight: '610px',
+              }}
+            >
+              <img
+                src="/assets/hero-road.jpg"
+                alt="Barrera Metálica con Rodillos instalada en infraestructura vial"
+                style={{
+                  width: '100%',
+                  height: '610px',
+                  objectFit: 'cover',
+                  display: 'block',
+                  borderRadius: '2px',
+                }}
+              />
+
+              {/* Small brand marker */}
+              <div
+                style={{
+                  position: 'absolute',
+                  left: '24px',
+                  bottom: '24px',
+                  background: '#F5F2EA',
+                  padding: '14px 18px',
+                  maxWidth: '250px',
+                }}
+              >
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: '10px',
+                    fontWeight: 700,
+                    letterSpacing: '0.15em',
+                    textTransform: 'uppercase',
+                    color: '#A97712',
+                  }}
+                >
+                  Colombia
+                </p>
+
+                <p
+                  style={{
+                    margin: '6px 0 0',
+                    fontSize: '14px',
+                    lineHeight: 1.45,
+                    color: '#192C3D',
+                  }}
+                >
+                  Distribución con respaldo técnico del fabricante
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Credentials */}
+          <div
+            style={{
+              marginTop: '64px',
+              paddingTop: '24px',
+              borderTop: '1px solid rgba(25,44,61,0.18)',
+              display: 'grid',
+              gridTemplateColumns:
+                'repeat(auto-fit, minmax(260px, 1fr))',
+              gap: '28px',
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '10px',
+                  fontWeight: 700,
+                  letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  color: '#A97712',
+                }}
+              >
+                Especificación técnica en Colombia
+              </p>
+
+              <p
+                style={{
+                  margin: '7px 0 0',
+                  fontSize: '17px',
+                  color: '#192C3D',
+                }}
+              >
+                INVÍAS · Artículo 732-22
               </p>
             </div>
 
-            {/* Actions */}
-            <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '14px',
-                justifyContent: 'flex-start',
-              }}
-            >
-              <a
-                href="#contacto-colombia"
+            <div>
+              <p
                 style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  minHeight: '52px',
-                  padding: '0 24px',
-                  background: '#192C3D',
-                  color: '#FFFFFF',
-                  textDecoration: 'none',
-                  fontSize: '15px',
-                  fontWeight: 600,
-                  borderRadius: '3px',
+                  margin: 0,
+                  fontSize: '10px',
+                  fontWeight: 700,
+                  letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  color: '#A97712',
                 }}
               >
-                Solicitar información técnica
-              </a>
+                Certificaciones internacionales
+              </p>
 
-              <a
-                href="/art_0732_inv_2022.pdf"
-                target="_blank"
-                rel="noreferrer"
+              <p
                 style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  minHeight: '52px',
-                  background: '#192C3D',
-                  color: '#FFFFFF',
-                  textDecoration: 'none',
-                  fontSize: '15px',
-                  fontWeight: 600,
+                  margin: '7px 0 0',
+                  fontSize: '17px',
+                  color: '#192C3D',
                 }}
               >
-                Consultar Artículo 732-22 INVÍAS ↗
-              </a>
+                EN 1317 · MASH · CE · FHWA
+              </p>
             </div>
-          </div>
-        </div>
-
-        {/* Technical credentials */}
-        <div
-          style={{
-            width: '100%',
-            maxWidth: '1380px',
-            margin: '70px auto 0',
-            borderTop: '1px solid rgba(25,44,61,0.18)',
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          }}
-        >
-          <div
-            style={{
-              padding: '24px 0',
-              paddingRight: '32px',
-            }}
-          >
-            <p
-              style={{
-                margin: 0,
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase',
-                color: '#A97712',
-              }}
-            >
-              Especificación técnica en Colombia
-            </p>
-
-            <p
-              style={{
-                margin: '8px 0 0',
-                fontSize: '18px',
-                fontWeight: 500,
-              }}
-            >
-              INVÍAS · Artículo 732-22
-            </p>
-          </div>
-
-          <div
-            style={{
-              padding: '24px 0',
-            }}
-          >
-            <p
-              style={{
-                margin: 0,
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase',
-                color: '#A97712',
-              }}
-            >
-              Certificaciones internacionales
-            </p>
-
-            <p
-              style={{
-                margin: '8px 0 0',
-                fontSize: '18px',
-                fontWeight: 500,
-              }}
-            >
-              EN 1317 · MASH · CE · FHWA
-            </p>
           </div>
         </div>
       </section>
