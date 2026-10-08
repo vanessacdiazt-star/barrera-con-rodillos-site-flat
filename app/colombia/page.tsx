@@ -938,7 +938,235 @@ export default function ColombiaPage() {
           </div>
         </div>
       </section>
+      {/* DESEMPEÑO DOCUMENTADO */}
+<section
+  style={{
+    padding: '96px 24px',
+    background: cream,
+  }}
+>
+  <div
+    style={{
+      width: '100%',
+      maxWidth: '1440px',
+      margin: '0 auto',
+    }}
+  >
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns:
+          'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
+        gap: '64px',
+        alignItems: 'end',
+      }}
+    >
+      <div>
+        <p
+          style={{
+            margin: 0,
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            color: yellow,
+          }}
+        >
+          Desempeño documentado
+        </p>
 
+        <h2
+          style={{
+            margin: '20px 0 0',
+            maxWidth: '780px',
+            fontSize: 'clamp(38px, 4vw, 58px)',
+            lineHeight: 1.04,
+            letterSpacing: '-0.035em',
+            fontWeight: 700,
+            color: navy,
+          }}
+        >
+          El desempeño se demuestra mediante ensayos de impacto a escala real
+        </h2>
+      </div>
+
+      <p
+        style={{
+          margin: 0,
+          maxWidth: '640px',
+          fontSize: '17px',
+          lineHeight: 1.7,
+          color: muted,
+        }}
+      >
+        Los sistemas de contención vehicular deben acreditar su comportamiento
+        mediante documentación técnica y ensayos realizados bajo estándares
+        reconocidos. Estos ensayos permiten evaluar no solo la capacidad de
+        contención, sino también la deformación del sistema, la trayectoria del
+        vehículo y la severidad del impacto.
+      </p>
+    </div>
+
+    {/* ESTÁNDARES Y DOCUMENTOS */}
+    <div
+      style={{
+        marginTop: '54px',
+        display: 'grid',
+        gridTemplateColumns:
+          'repeat(auto-fit, minmax(260px, 1fr))',
+        borderTop: '1px solid rgba(25,44,61,0.16)',
+        borderBottom: '1px solid rgba(25,44,61,0.16)',
+      }}
+    >
+      {[
+        [
+          'EN 1317',
+          'Estándar europeo de ensayo',
+          'Evalúa el comportamiento de los sistemas de contención mediante ensayos de impacto a escala real, incluyendo parámetros de contención, severidad y deformación.',
+        ],
+        [
+          'MASH',
+          'Protocolo estadounidense de ensayo',
+          'Establece condiciones de impacto y criterios de evaluación para sistemas de contención vehicular en Estados Unidos.',
+        ],
+        [
+          'CE',
+          'Conformidad europea',
+          'Documenta la conformidad del producto con los requisitos aplicables para su comercialización dentro del marco europeo correspondiente.',
+        ],
+        [
+          'FHWA',
+          'Elegibilidad documentada',
+          'La documentación emitida por la Federal Highway Administration respalda la elegibilidad del sistema evaluado para el marco vial estadounidense correspondiente.',
+        ],
+      ].map(([code, title, description], index) => (
+        <div
+          key={code}
+          style={{
+            padding: '32px 30px',
+            borderRight:
+              index < 3
+                ? '1px solid rgba(25,44,61,0.14)'
+                : 'none',
+          }}
+        >
+          <p
+            style={{
+              margin: 0,
+              fontSize: '13px',
+              fontWeight: 700,
+              color: yellow,
+            }}
+          >
+            {code}
+          </p>
+
+          <h3
+            style={{
+              margin: '10px 0 0',
+              fontSize: '20px',
+              lineHeight: 1.25,
+              color: navy,
+            }}
+          >
+            {title}
+          </h3>
+
+          <p
+            style={{
+              margin: '12px 0 0',
+              fontSize: '15px',
+              lineHeight: 1.65,
+              color: muted,
+            }}
+          >
+            {description}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    {/* QUÉ SE MIDE */}
+    <div
+      style={{
+        marginTop: '52px',
+        display: 'grid',
+        gridTemplateColumns:
+          'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
+        gap: '64px',
+        alignItems: 'start',
+      }}
+    >
+      <div>
+        <p
+          style={{
+            margin: 0,
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.16em',
+            textTransform: 'uppercase',
+            color: yellow,
+          }}
+        >
+          Qué se evalúa
+        </p>
+
+        <h3
+          style={{
+            margin: '16px 0 0',
+            maxWidth: '650px',
+            fontSize: 'clamp(30px, 3vw, 44px)',
+            lineHeight: 1.08,
+            letterSpacing: '-0.025em',
+            color: navy,
+          }}
+        >
+          No basta con alcanzar un nivel de contención
+        </h3>
+      </div>
+
+      <div>
+        <p
+          style={{
+            margin: 0,
+            fontSize: '16px',
+            lineHeight: 1.7,
+            color: text,
+          }}
+        >
+          Dos sistemas que alcanzan un nivel de contención comparable pueden
+          presentar comportamientos diferentes durante el impacto. Por eso,
+          la evaluación también considera la anchura de trabajo, la deflexión
+          dinámica, la severidad del impacto y el comportamiento posterior
+          del vehículo.
+        </p>
+
+        <div
+          style={{
+            marginTop: '28px',
+            paddingTop: '20px',
+            borderTop: '1px solid rgba(25,44,61,0.16)',
+          }}
+        >
+          <p
+            style={{
+              margin: 0,
+              fontSize: '14px',
+              lineHeight: 1.65,
+              color: navy,
+              fontWeight: 600,
+            }}
+          >
+            La metodología colombiana exige que la documentación del sistema
+            permita verificar que el ejemplar instalado corresponde al sistema
+            efectivamente ensayado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
       {/* CONTACTO */}
       <section
         id="contacto-colombia"
