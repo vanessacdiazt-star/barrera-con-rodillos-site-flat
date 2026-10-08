@@ -422,6 +422,249 @@ export default function ColombiaPage() {
     </div>
   </div>
 </section>
+      <section
+  style={{
+    padding: '120px 24px',
+    background: '#F5F2EA',
+  }}
+>
+  <div
+    style={{
+      width: '100%',
+      maxWidth: '1440px',
+      margin: '0 auto',
+    }}
+  >
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns:
+          'repeat(auto-fit, minmax(min(100%, 520px), 1fr))',
+        gap: '72px',
+        alignItems: 'start',
+      }}
+    >
+      {/* Columna izquierda */}
+      <div>
+        <p
+          style={{
+            margin: 0,
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            color: '#ECB537',
+          }}
+        >
+          La tecnología
+        </p>
+
+        <h2
+          style={{
+            margin: '22px 0 0',
+            maxWidth: '760px',
+            fontSize: 'clamp(38px, 4.5vw, 64px)',
+            lineHeight: 1.02,
+            letterSpacing: '-0.04em',
+            fontWeight: 700,
+            color: '#192C3D',
+          }}
+        >
+          ¿Qué es una Barrera Metálica con Rodillos?
+        </h2>
+
+        <p
+          style={{
+            marginTop: '32px',
+            marginBottom: 0,
+            maxWidth: '680px',
+            fontSize: '18px',
+            lineHeight: 1.7,
+            color: '#334755',
+          }}
+        >
+          Es un sistema de contención vehicular que incorpora elementos
+          tipo rodillo dentro de una estructura metálica para gestionar
+          la energía generada durante un impacto y contribuir al
+          redireccionamiento del vehículo.
+        </p>
+
+        <p
+          style={{
+            marginTop: '24px',
+            marginBottom: 0,
+            maxWidth: '680px',
+            fontSize: '16px',
+            lineHeight: 1.7,
+            color: '#6D7B8E',
+          }}
+        >
+          En Colombia, las Especificaciones Generales de Construcción de
+          Carreteras de INVÍAS 2022 incluyen específicamente las
+          “Barreras metálicas con rodillos” en el Artículo 732-22.
+        </p>
+      </div>
+
+      {/* Columna derecha */}
+      <div>
+        <p
+          style={{
+            margin: 0,
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            color: '#ECB537',
+          }}
+        >
+          Cómo funciona
+        </p>
+
+        <div
+          style={{
+            marginTop: '22px',
+            borderTop: '1px solid rgba(25,44,61,0.16)',
+          }}
+        >
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '72px 1fr',
+              gap: '20px',
+              padding: '28px 0',
+              borderBottom: '1px solid rgba(25,44,61,0.16)',
+            }}
+          >
+            <div
+              style={{
+                fontSize: '15px',
+                fontWeight: 700,
+                color: '#ECB537',
+              }}
+            >
+              01
+            </div>
+
+            <div>
+              <h3
+                style={{
+                  margin: 0,
+                  fontSize: '22px',
+                  lineHeight: 1.2,
+                  color: '#192C3D',
+                }}
+              >
+                Transformación de energía
+              </h3>
+
+              <p
+                style={{
+                  margin: '10px 0 0',
+                  fontSize: '16px',
+                  lineHeight: 1.65,
+                  color: '#6D7B8E',
+                }}
+              >
+                El movimiento de los rodillos permite transformar parte
+                de la energía cinética del impacto en energía rotacional.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '72px 1fr',
+              gap: '20px',
+              padding: '28px 0',
+              borderBottom: '1px solid rgba(25,44,61,0.16)',
+            }}
+          >
+            <div
+              style={{
+                fontSize: '15px',
+                fontWeight: 700,
+                color: '#ECB537',
+              }}
+            >
+              02
+            </div>
+
+            <div>
+              <h3
+                style={{
+                  margin: 0,
+                  fontSize: '22px',
+                  lineHeight: 1.2,
+                  color: '#192C3D',
+                }}
+              >
+                Absorción y disipación
+              </h3>
+
+              <p
+                style={{
+                  margin: '10px 0 0',
+                  fontSize: '16px',
+                  lineHeight: 1.65,
+                  color: '#6D7B8E',
+                }}
+              >
+                Los elementos de EVA contribuyen a absorber y disipar
+                progresivamente la energía generada durante la colisión.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '72px 1fr',
+              gap: '20px',
+              padding: '28px 0 0',
+            }}
+          >
+            <div
+              style={{
+                fontSize: '15px',
+                fontWeight: 700,
+                color: '#ECB537',
+              }}
+            >
+              03
+            </div>
+
+            <div>
+              <h3
+                style={{
+                  margin: 0,
+                  fontSize: '22px',
+                  lineHeight: 1.2,
+                  color: '#192C3D',
+                }}
+              >
+                Redirección controlada
+              </h3>
+
+              <p
+                style={{
+                  margin: '10px 0 0',
+                  fontSize: '16px',
+                  lineHeight: 1.65,
+                  color: '#6D7B8E',
+                }}
+              >
+                El sistema contribuye a conducir nuevamente el vehículo
+                hacia una trayectoria controlada sobre la vía después
+                del impacto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
