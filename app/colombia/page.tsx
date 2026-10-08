@@ -317,6 +317,111 @@ export default function ColombiaPage() {
           </div>
         </div>
       </section>
+      <section
+  style={{
+    padding: '120px 24px',
+    background: '#FFFFFF',
+  }}
+>
+  <div
+    style={{
+      width: '100%',
+      maxWidth: '1440px',
+      margin: '0 auto',
+      display: 'grid',
+      gridTemplateColumns:
+        'repeat(auto-fit, minmax(min(100%, 520px), 1fr))',
+      gap: '72px',
+      alignItems: 'start',
+    }}
+  >
+    {/* Columna izquierda */}
+    <div>
+      <p
+        style={{
+          margin: 0,
+          fontSize: '11px',
+          fontWeight: 700,
+          letterSpacing: '0.18em',
+          textTransform: 'uppercase',
+          color: '#ECB537',
+        }}
+      >
+        Seguridad vial e infraestructura
+      </p>
+
+      <h2
+        style={{
+          margin: '22px 0 0',
+          maxWidth: '760px',
+          fontSize: 'clamp(38px, 4.5vw, 66px)',
+          lineHeight: 1.02,
+          letterSpacing: '-0.04em',
+          fontWeight: 700,
+          color: '#192C3D',
+        }}
+      >
+        Infraestructura pensada para reducir la severidad de los siniestros
+      </h2>
+    </div>
+
+    {/* Columna derecha */}
+    <div
+      style={{
+        maxWidth: '660px',
+      }}
+    >
+      <p
+        style={{
+          margin: 0,
+          fontSize: 'clamp(18px, 1.6vw, 22px)',
+          lineHeight: 1.6,
+          color: '#334755',
+        }}
+      >
+        La seguridad vial no depende únicamente de prevenir que ocurra
+        un siniestro. También depende de cómo responde la infraestructura
+        cuando un vehículo pierde el control.
+      </p>
+
+      <p
+        style={{
+          marginTop: '28px',
+          marginBottom: 0,
+          fontSize: '17px',
+          lineHeight: 1.7,
+          color: '#6D7B8E',
+        }}
+      >
+        Los sistemas de contención vehicular forman parte de esa respuesta,
+        al contribuir a contener, absorber energía y gestionar la trayectoria
+        posterior al impacto.
+      </p>
+
+      <div
+        style={{
+          marginTop: '42px',
+          paddingTop: '22px',
+          borderTop: '1px solid rgba(25,44,61,0.16)',
+        }}
+      >
+        <p
+          style={{
+            margin: 0,
+            fontSize: '14px',
+            lineHeight: 1.6,
+            color: '#192C3D',
+            fontWeight: 600,
+          }}
+        >
+          El objetivo no es sustituir la prevención, sino complementar la
+          seguridad vial con infraestructura capaz de responder mejor ante
+          un impacto.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
