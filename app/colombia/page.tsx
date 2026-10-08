@@ -91,7 +91,7 @@ export default function ColombiaPage() {
               <h1
                 style={{
                   margin: 0,
-                  fontSize: 'clamp(56px, 7vw, 104px)',
+                  fontSize: 'clamp(48px, 6vw, 88px)',
                   lineHeight: 0.95,
                   letterSpacing: '-0.05em',
                   fontWeight: 700,
